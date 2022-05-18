@@ -1,1 +1,54 @@
-<mxfile host="app.diagrams.net" modified="2022-05-18T07:20:20.984Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.67 Safari/537.36" version="18.0.7" etag="xD9p2ry4BMCGWy4Cg6kn" type="github"><diagram id="ulDKiab5hXPTw-nIv8lt">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2022-05-18T07:23:35.463Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.67 Safari/537.36" etag="H4Bwo-yICZz_yaWj8Eij" version="18.0.7" type="github">
+  <diagram id="ulDKiab5hXPTw-nIv8lt" name="Page-1">
+    <mxGraphModel dx="806" dy="845" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="4mxZf_RTy56D92MBAGLB-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="4mxZf_RTy56D92MBAGLB-1" target="4mxZf_RTy56D92MBAGLB-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4mxZf_RTy56D92MBAGLB-1" value="시작" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="300" y="310" width="100" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="4mxZf_RTy56D92MBAGLB-11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="4mxZf_RTy56D92MBAGLB-2" target="4mxZf_RTy56D92MBAGLB-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4mxZf_RTy56D92MBAGLB-2" value="정수 2개 입력" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="290" y="440" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="4mxZf_RTy56D92MBAGLB-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="4mxZf_RTy56D92MBAGLB-4" target="4mxZf_RTy56D92MBAGLB-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4mxZf_RTy56D92MBAGLB-4" value="2개의 합을 구한다" style="whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="290" y="650" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="4mxZf_RTy56D92MBAGLB-15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="4mxZf_RTy56D92MBAGLB-6" target="4mxZf_RTy56D92MBAGLB-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4mxZf_RTy56D92MBAGLB-6" value="구한 합을 화면에 출력" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="290" y="740" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="4mxZf_RTy56D92MBAGLB-12" value="True" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="4mxZf_RTy56D92MBAGLB-10" target="4mxZf_RTy56D92MBAGLB-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4mxZf_RTy56D92MBAGLB-13" value="false" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="4mxZf_RTy56D92MBAGLB-10">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="350" y="410" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="410" y="565" />
+              <mxPoint x="460" y="565" />
+              <mxPoint x="460" y="410" />
+              <mxPoint x="350" y="410" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4mxZf_RTy56D92MBAGLB-10" value="데이터 2개가 입력되었는가" style="rhombus;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="290" y="525" width="120" height="85" as="geometry" />
+        </mxCell>
+        <mxCell id="4mxZf_RTy56D92MBAGLB-14" value="끝" style="ellipse;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="290" y="840" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
