@@ -1,1 +1,374 @@
-<mxfile host="app.diagrams.net" modified="2022-05-22T23:49:48.688Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.0.0 Safari/537.36" version="18.1.1" etag="dGixk42nB20EgIwXk0_T" type="github"><diagram id="P1Xnw74C-jG533cpKD8t">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2022-05-23T00:58:28.114Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.0.0 Safari/537.36" etag="1CM-BHg3vSGEeUx3Ng4u" version="18.1.1" type="github">
+  <diagram id="P1Xnw74C-jG533cpKD8t" name="Page-1">
+    <mxGraphModel dx="2053" dy="1877" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="IA9CuO_o-1BcFD4i8bfG-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="IA9CuO_o-1BcFD4i8bfG-1" target="IA9CuO_o-1BcFD4i8bfG-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IA9CuO_o-1BcFD4i8bfG-1" value="start" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="110" y="40" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="IA9CuO_o-1BcFD4i8bfG-46" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="IA9CuO_o-1BcFD4i8bfG-2" target="IA9CuO_o-1BcFD4i8bfG-44">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IA9CuO_o-1BcFD4i8bfG-2" value="int CheckNotation(std::string str, int num)" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="398" y="50" width="150" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="IA9CuO_o-1BcFD4i8bfG-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="IA9CuO_o-1BcFD4i8bfG-3" target="IA9CuO_o-1BcFD4i8bfG-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IA9CuO_o-1BcFD4i8bfG-3" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=hexagon;perimeter=hexagonPerimeter2;arcSize=6;size=0.27;" vertex="1" parent="1">
+          <mxGeometry x="110" y="130" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="IA9CuO_o-1BcFD4i8bfG-5" value="string str;&lt;br&gt;	int num = 0;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="125" y="145" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="IA9CuO_o-1BcFD4i8bfG-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="IA9CuO_o-1BcFD4i8bfG-6" target="IA9CuO_o-1BcFD4i8bfG-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IA9CuO_o-1BcFD4i8bfG-6" value="str" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=1;arcSize=12;size=0.23;" vertex="1" parent="1">
+          <mxGeometry x="110" y="390" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="IA9CuO_o-1BcFD4i8bfG-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="IA9CuO_o-1BcFD4i8bfG-7" target="IA9CuO_o-1BcFD4i8bfG-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IA9CuO_o-1BcFD4i8bfG-7" value="while (1)" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.loop_limit;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="110" y="220" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="IA9CuO_o-1BcFD4i8bfG-8" value="" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.loop_limit;whiteSpace=wrap;rotation=-180;" vertex="1" parent="1">
+          <mxGeometry x="110" y="610" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="IA9CuO_o-1BcFD4i8bfG-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="IA9CuO_o-1BcFD4i8bfG-9" target="IA9CuO_o-1BcFD4i8bfG-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IA9CuO_o-1BcFD4i8bfG-9" value="cout &lt;&lt; &quot;10진수 데이타를 입력하시오 : &quot;;" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.document2;whiteSpace=wrap;size=0.25;" vertex="1" parent="1">
+          <mxGeometry x="110" y="300" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="IA9CuO_o-1BcFD4i8bfG-17" value="true" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="IA9CuO_o-1BcFD4i8bfG-14" target="IA9CuO_o-1BcFD4i8bfG-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IA9CuO_o-1BcFD4i8bfG-34" value="false" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="IA9CuO_o-1BcFD4i8bfG-14" target="IA9CuO_o-1BcFD4i8bfG-33">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IA9CuO_o-1BcFD4i8bfG-14" value="CheckNotation(str, 10)" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="80" y="480" width="160" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="IA9CuO_o-1BcFD4i8bfG-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="IA9CuO_o-1BcFD4i8bfG-18" target="IA9CuO_o-1BcFD4i8bfG-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IA9CuO_o-1BcFD4i8bfG-18" value="break;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="130" y="615" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="IA9CuO_o-1BcFD4i8bfG-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="IA9CuO_o-1BcFD4i8bfG-22" target="IA9CuO_o-1BcFD4i8bfG-30">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IA9CuO_o-1BcFD4i8bfG-22" value="num" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=1;arcSize=12;size=0.23;" vertex="1" parent="1">
+          <mxGeometry x="110" y="850" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="IA9CuO_o-1BcFD4i8bfG-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="IA9CuO_o-1BcFD4i8bfG-24" target="IA9CuO_o-1BcFD4i8bfG-27">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IA9CuO_o-1BcFD4i8bfG-24" value="while (1)" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.loop_limit;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="110" y="680" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="IA9CuO_o-1BcFD4i8bfG-25" value="" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.loop_limit;whiteSpace=wrap;rotation=-180;" vertex="1" parent="1">
+          <mxGeometry x="110" y="1070" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="IA9CuO_o-1BcFD4i8bfG-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="IA9CuO_o-1BcFD4i8bfG-27" target="IA9CuO_o-1BcFD4i8bfG-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IA9CuO_o-1BcFD4i8bfG-27" value="cout &lt;&lt; &quot;변환할 데이타의 진수는 : &quot;;" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.document2;whiteSpace=wrap;size=0.25;" vertex="1" parent="1">
+          <mxGeometry x="110" y="760" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="IA9CuO_o-1BcFD4i8bfG-28" value="true" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="IA9CuO_o-1BcFD4i8bfG-30" target="IA9CuO_o-1BcFD4i8bfG-25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IA9CuO_o-1BcFD4i8bfG-41" value="false" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="IA9CuO_o-1BcFD4i8bfG-30" target="IA9CuO_o-1BcFD4i8bfG-40">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IA9CuO_o-1BcFD4i8bfG-30" value="num &amp;gt;= 2 &amp;amp;&amp;amp; num &amp;lt;= 36" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="80" y="940" width="160" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="IA9CuO_o-1BcFD4i8bfG-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="IA9CuO_o-1BcFD4i8bfG-31" target="IA9CuO_o-1BcFD4i8bfG-122">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="240" y="1140" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="IA9CuO_o-1BcFD4i8bfG-31" value="break;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="130" y="1075" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="IA9CuO_o-1BcFD4i8bfG-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="IA9CuO_o-1BcFD4i8bfG-33" target="IA9CuO_o-1BcFD4i8bfG-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IA9CuO_o-1BcFD4i8bfG-33" value="cout &lt;&lt;&quot;10진수에 맞춰서 데이터를 입력하세요.&quot; &lt;&lt; endl;" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.document2;whiteSpace=wrap;size=0.25;" vertex="1" parent="1">
+          <mxGeometry x="240" y="360" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="IA9CuO_o-1BcFD4i8bfG-39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="IA9CuO_o-1BcFD4i8bfG-36" target="IA9CuO_o-1BcFD4i8bfG-37">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IA9CuO_o-1BcFD4i8bfG-36" value="cout &amp;lt;&amp;lt;&quot;변환된 데이타는 : &quot;&amp;lt;&amp;lt;str;" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.document2;whiteSpace=wrap;size=0.25;" vertex="1" parent="1">
+          <mxGeometry x="65" y="1210" width="190" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="IA9CuO_o-1BcFD4i8bfG-37" value="end" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="110" y="1300" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="IA9CuO_o-1BcFD4i8bfG-42" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="IA9CuO_o-1BcFD4i8bfG-40" target="IA9CuO_o-1BcFD4i8bfG-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IA9CuO_o-1BcFD4i8bfG-40" value="cout &lt;&lt; &quot;2~36사이 수를 입력하세요.&quot; &lt;&lt; endl;" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.document2;whiteSpace=wrap;size=0.25;" vertex="1" parent="1">
+          <mxGeometry x="240" y="810" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="IA9CuO_o-1BcFD4i8bfG-76" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="IA9CuO_o-1BcFD4i8bfG-44" target="IA9CuO_o-1BcFD4i8bfG-47">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IA9CuO_o-1BcFD4i8bfG-44" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=hexagon;perimeter=hexagonPerimeter2;arcSize=6;size=0.27;" vertex="1" parent="1">
+          <mxGeometry x="415.5" y="150" width="115" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="IA9CuO_o-1BcFD4i8bfG-45" value="int size = strlen(str.c_str());" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="442.5" y="162" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="IA9CuO_o-1BcFD4i8bfG-53" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="IA9CuO_o-1BcFD4i8bfG-47" target="IA9CuO_o-1BcFD4i8bfG-50">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IA9CuO_o-1BcFD4i8bfG-47" value="int i=0,i++" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.loop_limit;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="422.5" y="260" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="IA9CuO_o-1BcFD4i8bfG-74" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="IA9CuO_o-1BcFD4i8bfG-48" target="IA9CuO_o-1BcFD4i8bfG-75">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="472.4999999999998" y="829.9999999999998" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="IA9CuO_o-1BcFD4i8bfG-48" value="" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.loop_limit;whiteSpace=wrap;rotation=-180;" vertex="1" parent="1">
+          <mxGeometry x="422.5" y="720" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="IA9CuO_o-1BcFD4i8bfG-49" value="i&lt; size" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="442.5" y="735" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="IA9CuO_o-1BcFD4i8bfG-51" value="fale" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="IA9CuO_o-1BcFD4i8bfG-50" target="IA9CuO_o-1BcFD4i8bfG-52">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="473" y="439.9999999999998" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="IA9CuO_o-1BcFD4i8bfG-54" value="true" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="IA9CuO_o-1BcFD4i8bfG-50" target="IA9CuO_o-1BcFD4i8bfG-55">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="608" y="380.41176470588243" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="IA9CuO_o-1BcFD4i8bfG-50" value="str[i] &amp;gt;= &#39;A&#39;&amp;amp;&amp;amp;str[i]&amp;lt;=&#39;Z&#39;" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="398" y="350" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="IA9CuO_o-1BcFD4i8bfG-58" value="true" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="IA9CuO_o-1BcFD4i8bfG-52" target="IA9CuO_o-1BcFD4i8bfG-57">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IA9CuO_o-1BcFD4i8bfG-61" value="false" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="IA9CuO_o-1BcFD4i8bfG-52" target="IA9CuO_o-1BcFD4i8bfG-60">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IA9CuO_o-1BcFD4i8bfG-52" value="str[i] &amp;gt;= &#39;a&#39; &amp;amp;&amp;amp; str[i] &amp;lt;= &#39;z&#39;" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="398" y="450" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="IA9CuO_o-1BcFD4i8bfG-56" value="false" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="IA9CuO_o-1BcFD4i8bfG-55" target="IA9CuO_o-1BcFD4i8bfG-48">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IA9CuO_o-1BcFD4i8bfG-73" value="true" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="IA9CuO_o-1BcFD4i8bfG-55" target="IA9CuO_o-1BcFD4i8bfG-70">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="998" y="380" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="IA9CuO_o-1BcFD4i8bfG-55" value="(str[i] - &#39;A&#39;)+10 &gt;= num" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="848" y="330.00176470588247" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="IA9CuO_o-1BcFD4i8bfG-59" value="false" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.006;entryY=0.346;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="IA9CuO_o-1BcFD4i8bfG-57" target="IA9CuO_o-1BcFD4i8bfG-48">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="768" y="750" />
+              <mxPoint x="522" y="750" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="IA9CuO_o-1BcFD4i8bfG-69" value="true" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="IA9CuO_o-1BcFD4i8bfG-57" target="IA9CuO_o-1BcFD4i8bfG-68">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IA9CuO_o-1BcFD4i8bfG-57" value="(str[i] - &#39;a&#39;)+10 &amp;gt;= num" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="718" y="430.00176470588247" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="IA9CuO_o-1BcFD4i8bfG-62" value="false" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="IA9CuO_o-1BcFD4i8bfG-60" target="IA9CuO_o-1BcFD4i8bfG-48">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IA9CuO_o-1BcFD4i8bfG-64" value="true" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="IA9CuO_o-1BcFD4i8bfG-60" target="IA9CuO_o-1BcFD4i8bfG-63">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IA9CuO_o-1BcFD4i8bfG-60" value="str[i] &amp;gt;= &#39;0&#39; &amp;amp;&amp;amp; str[i] &amp;lt;= &#39;9&#39;" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="398" y="560" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="IA9CuO_o-1BcFD4i8bfG-65" value="false" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="IA9CuO_o-1BcFD4i8bfG-63" target="IA9CuO_o-1BcFD4i8bfG-48">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IA9CuO_o-1BcFD4i8bfG-67" value="true" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="IA9CuO_o-1BcFD4i8bfG-63" target="IA9CuO_o-1BcFD4i8bfG-66">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IA9CuO_o-1BcFD4i8bfG-63" value="(str[i] - &#39;0&#39;) &amp;gt;= num" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="588" y="540.0017647058825" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="IA9CuO_o-1BcFD4i8bfG-66" value="return 0;" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="658" y="650" width="100" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="IA9CuO_o-1BcFD4i8bfG-68" value="return 0;" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="785" y="550" width="100" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="IA9CuO_o-1BcFD4i8bfG-70" value="return 0;" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="948" y="440" width="100" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="IA9CuO_o-1BcFD4i8bfG-75" value="return 1;" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="423" y="835" width="100" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="IA9CuO_o-1BcFD4i8bfG-79" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="IA9CuO_o-1BcFD4i8bfG-78" target="IA9CuO_o-1BcFD4i8bfG-80">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="472.5" y="1060" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="IA9CuO_o-1BcFD4i8bfG-78" value="std::string ChangeNotation(std::string str, int num)" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="389.75" y="949" width="165.5" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="IA9CuO_o-1BcFD4i8bfG-83" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="IA9CuO_o-1BcFD4i8bfG-80" target="IA9CuO_o-1BcFD4i8bfG-82">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IA9CuO_o-1BcFD4i8bfG-80" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=hexagon;perimeter=hexagonPerimeter2;arcSize=6;size=0.27;" vertex="1" parent="1">
+          <mxGeometry x="370" y="1030" width="205.5" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="IA9CuO_o-1BcFD4i8bfG-81" value="int strnumber = stoi(str);&#xa;	int temp = 0;&#xa;	int power = 1;&#xa;	string str1;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="407.25" y="1060" width="135" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="IA9CuO_o-1BcFD4i8bfG-85" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="IA9CuO_o-1BcFD4i8bfG-82" target="IA9CuO_o-1BcFD4i8bfG-84">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IA9CuO_o-1BcFD4i8bfG-82" value="while (1)" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.loop_limit;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="422.75" y="1150" width="100" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="IA9CuO_o-1BcFD4i8bfG-86" value="true" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="IA9CuO_o-1BcFD4i8bfG-84" target="IA9CuO_o-1BcFD4i8bfG-87">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="472.75" y="1340" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="IA9CuO_o-1BcFD4i8bfG-88" value="false" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="IA9CuO_o-1BcFD4i8bfG-84" target="IA9CuO_o-1BcFD4i8bfG-89">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="598.25" y="1265" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="IA9CuO_o-1BcFD4i8bfG-84" value="power &lt;= strnumber" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="405" y="1230" width="135.5" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="IA9CuO_o-1BcFD4i8bfG-92" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="IA9CuO_o-1BcFD4i8bfG-87" target="IA9CuO_o-1BcFD4i8bfG-91">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IA9CuO_o-1BcFD4i8bfG-87" value="power *= num;" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="422.75" y="1350" width="100" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="IA9CuO_o-1BcFD4i8bfG-93" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="IA9CuO_o-1BcFD4i8bfG-89" target="IA9CuO_o-1BcFD4i8bfG-91">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="618.25" y="1464" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="IA9CuO_o-1BcFD4i8bfG-89" value="&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;power /= num;&lt;/span&gt;&lt;br&gt;&lt;/div&gt;break;" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="578.25" y="1244.25" width="80" height="41.5" as="geometry" />
+        </mxCell>
+        <mxCell id="IA9CuO_o-1BcFD4i8bfG-96" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="IA9CuO_o-1BcFD4i8bfG-91" target="IA9CuO_o-1BcFD4i8bfG-98">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="472.7499999999998" y="1530" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="IA9CuO_o-1BcFD4i8bfG-91" value="" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.loop_limit;whiteSpace=wrap;rotation=-180;" vertex="1" parent="1">
+          <mxGeometry x="422.75" y="1434" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="IA9CuO_o-1BcFD4i8bfG-99" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="IA9CuO_o-1BcFD4i8bfG-98" target="IA9CuO_o-1BcFD4i8bfG-100">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="472.7499999999998" y="1650" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="IA9CuO_o-1BcFD4i8bfG-98" value="while (1)" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.loop_limit;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="422.75" y="1540" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="IA9CuO_o-1BcFD4i8bfG-102" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="IA9CuO_o-1BcFD4i8bfG-100" target="IA9CuO_o-1BcFD4i8bfG-101">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IA9CuO_o-1BcFD4i8bfG-100" value="temp = strnumber / power;&#xa;		strnumber -= temp * power;&#xa;		power /= num;" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="391.75" y="1650" width="162.5" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="IA9CuO_o-1BcFD4i8bfG-106" value="true" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="IA9CuO_o-1BcFD4i8bfG-101" target="IA9CuO_o-1BcFD4i8bfG-105">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IA9CuO_o-1BcFD4i8bfG-107" value="false" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="IA9CuO_o-1BcFD4i8bfG-101" target="IA9CuO_o-1BcFD4i8bfG-108">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="578.25" y="1800" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="IA9CuO_o-1BcFD4i8bfG-101" value="temp &gt;= 10" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="422.75" y="1750" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="IA9CuO_o-1BcFD4i8bfG-109" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="IA9CuO_o-1BcFD4i8bfG-105" target="IA9CuO_o-1BcFD4i8bfG-111">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="568.25" y="2000" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="IA9CuO_o-1BcFD4i8bfG-105" value="str1 += temp - 10 + &#39;A&#39;;" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="410.5" y="1880" width="125.5" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="IA9CuO_o-1BcFD4i8bfG-110" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="IA9CuO_o-1BcFD4i8bfG-108" target="IA9CuO_o-1BcFD4i8bfG-111">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="598.25" y="1990" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="628.25" y="1990" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="IA9CuO_o-1BcFD4i8bfG-108" value="str1 += temp + &#39;0&#39;;" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="575.5" y="1770" width="125.5" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="IA9CuO_o-1BcFD4i8bfG-112" value="true" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="IA9CuO_o-1BcFD4i8bfG-111" target="IA9CuO_o-1BcFD4i8bfG-113">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="558.25" y="2060" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="IA9CuO_o-1BcFD4i8bfG-118" value="false" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="IA9CuO_o-1BcFD4i8bfG-111" target="IA9CuO_o-1BcFD4i8bfG-115">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="398.25" y="1990" />
+              <mxPoint x="398.25" y="2130" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="IA9CuO_o-1BcFD4i8bfG-111" value="power == 0" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="422.75" y="1960" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="IA9CuO_o-1BcFD4i8bfG-117" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="IA9CuO_o-1BcFD4i8bfG-113" target="IA9CuO_o-1BcFD4i8bfG-115">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IA9CuO_o-1BcFD4i8bfG-113" value="break;" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="438" y="2048" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="IA9CuO_o-1BcFD4i8bfG-119" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="IA9CuO_o-1BcFD4i8bfG-115" target="IA9CuO_o-1BcFD4i8bfG-120">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="472.7499999999998" y="2260" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="IA9CuO_o-1BcFD4i8bfG-115" value="" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.loop_limit;whiteSpace=wrap;rotation=-180;" vertex="1" parent="1">
+          <mxGeometry x="422.75" y="2100" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="IA9CuO_o-1BcFD4i8bfG-120" value="return str1;" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="422.75" y="2190" width="100" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="IA9CuO_o-1BcFD4i8bfG-123" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="IA9CuO_o-1BcFD4i8bfG-122" target="IA9CuO_o-1BcFD4i8bfG-36">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IA9CuO_o-1BcFD4i8bfG-122" value="str = ChangeNotation(str,num);" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="65" y="1140" width="190" height="41" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
