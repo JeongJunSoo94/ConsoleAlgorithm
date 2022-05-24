@@ -1,96 +1,85 @@
-#include <iostream>
-#include <string>
-/*
-* 각 진수끼리 변환하는 프로그램을 작성하라.
-* (2~36진수)
-* 변환할 데이타의 진수는 : 2
-* 데이타를 입력하시오 : 101
-* 출력할 데이타의 진수는 : 10
-* 변환된 데이타는 : 5
-*/
-std::string change(std::string str, int num,int num1)
-{
-	using namespace std;
-	string a;
-	int temp= 0;
-	if (str[0] >= 'A')
-	{
-		temp += (10 + (str[0] - 'A'));
-	}
-	else
-	{
-		temp += str[0]-'0';
-	}
-	for (int i = 1; i < strlen(str.c_str()); i++)
-	{
-		if (str[i] >= 'A')
-		{
-			temp += (10 + (str[i] - 'A')) * num * i;
-		}
-		else
-		{
-			temp += (str[i]-'0') * num * i;
-		}
-	}
-	/*int temp1;
-	while (1)
-	{
-		if (num1 <= 10)
-		{
-			if (temp < num1)
-			{
-				a += to_string(temp);
-				break;
-			}
-			temp1 = temp % num1;
-			temp /= num1;
-			a += to_string(temp1);
-		}
-		else
-		{
-			temp1 = temp % num1;
-			temp /= num1;
+//#define _CRT_SECURE_NO_WARNINGS
+//#include<stdio.h>
+//#include <time.h>
+//
+//int main()
+//{
+//	using namespace std;
+//	clock_t start, end;
+//	double result;
+//	int i, n;
+//	int prime[500];
+//	int ptr = 0;
+//	unsigned long counter = 0;
+//	start = clock();
+//	prime[ptr++] = 2;
+//	prime[ptr++] = 3;
+//	for (n = 5; n <= 1000; n += 2)
+//	{
+//		int flag = 0;
+//		for (i = 1,counter++; prime[i]* prime[i] <=n; i++)
+//		{
+//			counter++;
+//			if (n % prime[i] == 0)
+//			{
+//				flag = 1;
+//				break;
+//			}
+//		}
+//		if (!flag)
+//			prime[ptr++] = n;
+//	}
+//	for (i = 0; i < ptr; i++)
+//	{
+//		printf("%d\n", prime[i]);
+//	}
+//
+//	end = clock();
+//	result = (double)(end - start);
+//	printf("time : %lf\n", result / CLOCKS_PER_SEC);
+//	printf("곱셈과 나눗셈을 실행한 횟수 : %lu\n", counter);
+//	return 0;
+//}
 
-			if (temp1 > 10)
-			{
-				temp1 = 'A' + (temp1 - 10);
-				a += temp1;
-			}
-			else
-			{
-				a += to_string(temp1);
-			}
-			if (temp < num1)
-			{
-				a += to_string(temp);
-				break;
-			}
-		}
-	}*/
-	cout <<"temp :"<< temp;
-	return a;
-}
+//#define _CRT_SECURE_NO_WARNINGS
+//#include<stdio.h>
+//#include <time.h>
+//
+//int main()
+//{
+//	using namespace std;
+//	clock_t start, end;
+//	double result;
+//	int i, n;
+//	int prime[500];
+//	int ptr = 0;
+//	unsigned long counter = 0;
+//	start = clock();
+//	prime[ptr++] = 2;
+//	for (n = 3; n <= 1000; n += 2)
+//	{
+//		for (i = 1; i < ptr; i++)
+//		{
+//			counter++;
+//			if (n % prime[i] == 0)
+//				break;
+//		}
+//		if (ptr == i)
+//			prime[ptr++] = n;
+//	}
+//	for (i = 0; i < ptr; i++)
+//	{
+//		printf("%d\n", prime[i]);
+//	}
+//	
+//	end = clock();
+//	result = (double)(end - start);
+//	printf("time : %lf\n", result / CLOCKS_PER_SEC);
+//	printf("나눗셈을 실행한 횟수 : %lu\n", counter);
+//	return 0;
+//}
+//
 
-int main()
-{
-	using namespace std;
-
-	string str;
-	int num=0,num1=0;
-	cout << "변환할 데이타의 진수는 :";
-	cin >> num;
-	cout << "데이타를 입력하시오 :";
-	cin >> str;
-	cout << "변환할 데이타의 진수는 :";
-	cin >> num1;
-	str =change(str, num,num1);
-	for (int i = strlen(str.c_str())-1; i >=0; i--)
-	{
-		cout << str[i];
-	}
-
-	return 0;
-}
 //4 2 1  9 3 1
 // 
 //101 012
@@ -175,3 +164,219 @@ int main()
 * 출력할 데이타의 진수는 : 10
 * 변환된 데이타는 : 5
 */
+
+//#define _CRT_SECURE_NO_WARNINGS
+//#include<stdio.h>
+//#include <time.h>
+///*
+//* p.177 문제를 입력 함수부와 출력 함수부로 나누어 코드를 작성하라.
+//*/
+//void is_prime_number(int n);
+//int main()
+//{
+//	printf("2 이상의 정수를 입력하세요 : ");
+//	int n;
+//	clock_t start, end;
+//	double result;
+//	scanf("%d", &n);
+//	start = clock();
+//	is_prime_number(n);
+//	end = clock();
+//	result = (double)(end - start);
+//	printf("time : %lf" ,result/CLOCKS_PER_SEC);
+//	return 0;
+//}
+//void is_prime_number(int n)
+//{
+//	int check = 1, count = 5;
+//	for (int i = 2; i <= n; ++i)
+//	{
+//
+//		for (int j = 2; j * j <= i; ++j)
+//		{
+//			if ((i % j) == 0)
+//			{
+//				check = 0;
+//				break;
+//			}
+//		}
+//		if (check == 1)
+//		{
+//			if (count == 0)
+//			{
+//				printf("\n");
+//				count = 5;
+//			}
+//			printf("%3d", i);
+//			count--;
+//		}
+//
+//		check = 1;
+//	}
+//}
+
+/*
+* 소수 판별 프로그램 개선
+* 1. 홀수로만 계산하기
+* 2. 이전 계산된 소수로 나누어 지지 않는 수
+* 3. 제곱근 n 이하의 모든 소수로 나누었을 때 나누어 떨어지지 않는수를 소수
+*/
+
+#define _CRT_SECURE_NO_WARNINGS
+#include<stdio.h>
+#include<cmath>
+#include <time.h>
+
+void prime_number(int n)
+{
+	for (int i = 2; i <= n; ++i)
+	{
+		for (int j = 2; j < i; ++j)
+		{
+			if ((i % j) == 0)
+			{
+			}
+		}
+	}
+}
+
+void is_prime_number(int n)
+{
+	for (int i = 2; i <= n; ++i)
+	{
+		for (int j = 2; j * j <= i; ++j)
+		{
+			if ((i % j) == 0)
+			{
+				break;
+			}
+		}
+	}
+}
+
+void is_prime_number1()
+{
+	int i, n = 1000;
+	int prime[500];
+	int ptr = 0;
+	prime[ptr++] = 2;
+	for (i = 3; i <= n; i += 2)
+	{
+		for (int j = 1; j < i; i += 2)
+		{
+			if (i % j == 0)
+				break;
+		}
+		if (ptr == i)
+			prime[ptr++] = n;
+	}
+	for (i = 0; i < ptr; i++)
+	{
+		printf("%d\n", prime[i]);
+	}
+}
+
+void is_prime_number2()
+{
+	int i, n;
+	int prime[500];
+	int ptr = 0;
+	prime[ptr++] = 2;
+	for (n = 3; n <= 1000; n += 2)
+	{
+		for (i = 1; i < ptr; i++)
+		{
+			if (n % prime[i] == 0)
+				break;
+		}
+		if (ptr == i)
+			prime[ptr++] = n;
+	}
+}
+
+void is_prime_number3()
+{
+	int i, n;
+	int prime[500];
+	int ptr = 0;
+	prime[ptr++] = 2;
+	prime[ptr++] = 3;
+	for (n = 5; n <= 1000; n += 2)
+	{
+		int flag = 0;
+		for (i = 1; prime[i] * prime[i] <= n; i++)
+		{
+			if (n % prime[i] == 0)
+			{
+				flag = 1;
+				break;
+			}
+		}
+		if (!flag)
+			prime[ptr++] = n;
+	}
+	/*for (i = 0; i < ptr; i++)
+	{
+		printf("%d\n", prime[i]);
+	}*/
+	/*int n = 1000;
+	int check[1001] = { false };
+
+	check[0] = check[1] = true;
+	for (int i = 2; i < sqrt(n); i++) {
+		if (check[i] == false) {
+			for (int j = i + i; j <= n; j += i) {
+				check[j] = true;
+			}
+		}
+	}
+	for (int i = 1; i <= n; i++) {
+		if (!check[i]) printf("%d ", i);
+	}*/
+}
+int main()
+{
+	clock_t start, end;
+	double result;
+	start = clock();
+	for (int i = 0; i < 9999; i++)
+	{
+		prime_number(1000);
+	}
+	end = clock();
+	result = (double)(end - start);
+	printf("내가 첫번째 만든 time : %lf\n", result / CLOCKS_PER_SEC);
+	start = clock();
+	for (int i = 0; i < 9999; i++)
+	{
+		is_prime_number(1000);
+	}
+	end = clock();
+	result = (double)(end - start);
+	printf("내가 두번째 만든 time : %lf\n", result / CLOCKS_PER_SEC);
+	start = clock();
+	for (int i = 0; i < 1; i++)
+	{
+		is_prime_number1();
+	}
+	end = clock();
+	result = (double)(end - start);
+	printf("1 time : %lf\n", result / CLOCKS_PER_SEC);
+	start = clock();
+	for (int i = 0; i < 9999; i++)
+	{
+		is_prime_number2();
+	}
+	end = clock();
+	result = (double)(end - start);
+	printf("2 time : %lf\n", result / CLOCKS_PER_SEC);
+	start = clock();
+	for (int i = 0; i < 9999; i++)
+	{
+		is_prime_number3();
+	}
+	end = clock();
+	result = (double)(end - start);
+	printf("3 time : %lf\n", result / CLOCKS_PER_SEC);
+	return 0;
+}
