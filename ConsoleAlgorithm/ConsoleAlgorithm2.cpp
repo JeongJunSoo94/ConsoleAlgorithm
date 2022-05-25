@@ -369,53 +369,69 @@
 * 점(x,y) , (x0,y0)를 인자로 넘겨줄 때 포인터 구조체를
 * 이용해서 만들어야 한다.
 */
-#include<iostream>
+//#include<iostream>
+//
+//struct pos
+//{
+//	double x, y;
+//};
+//
+//double m_pow(double num, double m)
+//{
+//    double result = num;
+//    for (int i = 0; i < m - 1; i++)
+//    {
+//        result *= num;
+//    }
+//    return result;
+//}
+//
+//double m_sqrt(double n)
+//{
+//    double result = 0;
+//    double t = 0;
+//    result = n / 2;
+//    while (result != t)
+//    {
+//        t = result;
+//        result = ((n / t) + t) / 2;
+//    }
+//    return result;
+//}
+//
+//void check(int r,pos* dot,pos* centerdot)
+//{
+//    using namespace std;
+//    if (r >= m_sqrt(m_pow((dot->x - centerdot->x), 2) + m_pow((dot->y - centerdot->y), 2)))
+//    {
+//        cout<<"점 ("<< dot->x<<","<< dot->y << ")는 중점이("<< centerdot->x<<","<< centerdot->y << ")이고 반지름 "<< r<<"인 원 안에 있습니다.";
+//    }
+//}
+//
+//int main()
+//{
+//	using namespace std;
+//	pos dot;
+//	pos centerdot;
+//	int r;
+//	cout << "r x0 y0 x y 순서대로 입력하세요\ninput =>";
+//	cin >> r>> centerdot.x>> centerdot.y >> dot.x >> dot.y;
+//    check(r, &dot, &centerdot);
+//	return 0;
+//}
+/*
+* 4로 나누어 떨어지면서
+* 100으로는 나누어 떨어지지 않거나
+* 400으로 나누어 떨어지는 해 => 윤년이다.
+*/
 
-struct pos
-{
-	double x, y;
-};
-
-double m_pow(double num, double m)
-{
-    double result = num;
-    for (int i = 0; i < m - 1; i++)
-    {
-        result *= num;
-    }
-    return result;
-}
-
-double m_sqrt(double n)
-{
-    double result = 0;
-    double t = 0;
-    result = n / 2;
-    while (result != t)
-    {
-        t = result;
-        result = ((n / t) + t) / 2;
-    }
-    return result;
-}
-
-void check(int r,pos* dot,pos* centerdot)
-{
-    using namespace std;
-    if (r >= m_sqrt(m_pow((dot->x - centerdot->x), 2) + m_pow((dot->y - centerdot->y), 2)))
-    {
-        cout<<"점 ("<< dot->x<<","<< dot->y << ")는 중점이("<< centerdot->x<<","<< centerdot->y << ")이고 반지름 "<< r<<"인 원 안에 있습니다.";
-    }
-}
-
+#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
 int main()
 {
-	using namespace std;
-	pos dot;
-	pos centerdot;
-	int r;
-	cout << "r x0 y0 x y 순서대로 입력하세요\ninput =>";
-	cin >> r>> centerdot.x>> centerdot.y >> dot.x >> dot.y;
-    check(r, &dot, &centerdot);
-	return 0;
+    using namespace std;
+    int a;
+    scanf("%d", &a);
+    (a % 4 == 0) && ((a % 100 != 0) || (a % 400 == 0)) ? printf("1") : printf("0");
+    return 0;
 }
