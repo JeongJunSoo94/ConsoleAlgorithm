@@ -224,55 +224,56 @@
 
 #define _CRT_SECURE_NO_WARNINGS
 #include<stdio.h>
-#include<cmath>
 #include <time.h>
 
-void prime_number(int n)
+int prime_number(int n)
 {
-	for (int i = 2; i <= n; ++i)
+
+	for (int i = 2; i < n; ++i)
 	{
-		for (int j = 2; j < i; ++j)
+		if ((n % i) == 0)
 		{
-			if ((i % j) == 0)
-			{
-			}
+			return 0;
 		}
 	}
+	return 1;
 }
 
-void is_prime_number(int n)
+void prime_number1(int n)
 {
+	int prime[500];
+	int ptr = 0;
 	for (int i = 2; i <= n; ++i)
 	{
-		for (int j = 2; j * j <= i; ++j)
+		if (prime_number(i))
 		{
-			if ((i % j) == 0)
-			{
-				break;
-			}
+			prime[ptr++] = i;
 		}
 	}
 }
 
 void is_prime_number1()
 {
+	int check = 1;
 	int i, n = 1000;
 	int prime[500];
 	int ptr = 0;
 	prime[ptr++] = 2;
 	for (i = 3; i <= n; i += 2)
 	{
-		for (int j = 1; j < i; i += 2)
+		for (int j = 3; j < i; j += 2)
 		{
 			if (i % j == 0)
+			{
+				check = 0;
 				break;
+			}
 		}
-		if (ptr == i)
-			prime[ptr++] = n;
-	}
-	for (i = 0; i < ptr; i++)
-	{
-		printf("%d\n", prime[i]);
+		if (check == 1)
+		{
+			prime[ptr++] = i;
+		}
+		check = 1;
 	}
 }
 
@@ -315,47 +316,22 @@ void is_prime_number3()
 		if (!flag)
 			prime[ptr++] = n;
 	}
-	/*for (i = 0; i < ptr; i++)
-	{
-		printf("%d\n", prime[i]);
-	}*/
-	/*int n = 1000;
-	int check[1001] = { false };
 
-	check[0] = check[1] = true;
-	for (int i = 2; i < sqrt(n); i++) {
-		if (check[i] == false) {
-			for (int j = i + i; j <= n; j += i) {
-				check[j] = true;
-			}
-		}
-	}
-	for (int i = 1; i <= n; i++) {
-		if (!check[i]) printf("%d ", i);
-	}*/
 }
 int main()
 {
 	clock_t start, end;
 	double result;
 	start = clock();
-	for (int i = 0; i < 9999; i++)
+	for (int i = 0; i < 1000; i++)
 	{
-		prime_number(1000);
+		prime_number1(1000);
 	}
 	end = clock();
 	result = (double)(end - start);
-	printf("내가 첫번째 만든 time : %lf\n", result / CLOCKS_PER_SEC);
+	printf("0 time : %lf\n", result / CLOCKS_PER_SEC);
 	start = clock();
-	for (int i = 0; i < 9999; i++)
-	{
-		is_prime_number(1000);
-	}
-	end = clock();
-	result = (double)(end - start);
-	printf("내가 두번째 만든 time : %lf\n", result / CLOCKS_PER_SEC);
-	start = clock();
-	for (int i = 0; i < 1; i++)
+	for (int i = 0; i < 1000; i++)
 	{
 		is_prime_number1();
 	}
@@ -363,7 +339,7 @@ int main()
 	result = (double)(end - start);
 	printf("1 time : %lf\n", result / CLOCKS_PER_SEC);
 	start = clock();
-	for (int i = 0; i < 9999; i++)
+	for (int i = 0; i < 1000; i++)
 	{
 		is_prime_number2();
 	}
@@ -371,7 +347,7 @@ int main()
 	result = (double)(end - start);
 	printf("2 time : %lf\n", result / CLOCKS_PER_SEC);
 	start = clock();
-	for (int i = 0; i < 9999; i++)
+	for (int i = 0; i < 1000; i++)
 	{
 		is_prime_number3();
 	}
