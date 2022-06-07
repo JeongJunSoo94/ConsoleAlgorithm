@@ -1,0 +1,880 @@
+<mxfile host="app.diagrams.net" modified="2022-06-03T08:40:48.698Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.63 Safari/537.36" etag="kSyUCjf-284Tlh6Ho9PK" version="18.2.1" type="github">
+  <diagram id="w7yA7GhwH_8ZtXpPzVmI" name="Page-1">
+    <mxGraphModel dx="4878" dy="3380" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="BUVMTsfh7bfcfftBCkiT-1" target="BUVMTsfh7bfcfftBCkiT-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-1" value="start" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="-1023" y="20" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="BUVMTsfh7bfcfftBCkiT-6" target="BUVMTsfh7bfcfftBCkiT-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-6" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=hexagon;perimeter=hexagonPerimeter2;arcSize=6;size=0.27;" vertex="1" parent="1">
+          <mxGeometry x="-1028" y="120" width="110" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-7" value="IntQueue que;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-1013" y="135" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-11" value="true" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.45;entryY=-0.017;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="BUVMTsfh7bfcfftBCkiT-9" target="BUVMTsfh7bfcfftBCkiT-73">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-973" y="370" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="-831" y="260" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-12" value="false" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="BUVMTsfh7bfcfftBCkiT-9" target="BUVMTsfh7bfcfftBCkiT-75">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-852" y="254.72000000000003" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-9" value="Initialize(&amp;que, 5) == -1" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="-1038" y="210" width="130" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="BUVMTsfh7bfcfftBCkiT-13" target="BUVMTsfh7bfcfftBCkiT-15">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-100.00000000000023" y="115" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-13" value="int Initialize(IntQueue* q, int max)" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="-190" y="5" width="180" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="BUVMTsfh7bfcfftBCkiT-15" target="BUVMTsfh7bfcfftBCkiT-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-15" value="q-&gt;que = new int[max];" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="-170" y="75" width="140" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-18" value="true" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="BUVMTsfh7bfcfftBCkiT-16" target="BUVMTsfh7bfcfftBCkiT-20">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-100.00000000000023" y="295" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-19" value="false" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="BUVMTsfh7bfcfftBCkiT-16" target="BUVMTsfh7bfcfftBCkiT-21">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="29.999999999999773" y="195" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-16" value="q-&gt;que == nullptr" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="-150" y="145" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-20" value="return -1;" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="30" y="175" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-21" value="q-&gt;max = max;&#xa;		q-&gt;num = 0;&#xa;		q-&gt;front = 0;&#xa;		q-&gt;rear = 0;&#xa;		return 1;" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="-150" y="315" width="100" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-22" value="IntQueue.h" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="-1620" y="20" width="350" height="324" as="geometry" />
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-23" value="typedef struct {&#xa;int max;&#xa;int num;&#xa;int front;&#xa;int rear;&#xa;int* que;&#xa;}IntQueue;&#xa;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="BUVMTsfh7bfcfftBCkiT-22">
+          <mxGeometry y="26" width="350" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-24" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="BUVMTsfh7bfcfftBCkiT-22">
+          <mxGeometry y="136" width="350" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-25" value="int Initialize(IntQueue* q, int max);&#xa;int Enque(IntQueue* q, int x);&#xa;int Deque(IntQueue* q, int* x);&#xa;int Peek(const IntQueue* q, int* x);&#xa;void Clear(IntQueue* q);&#xa;int Capacity(const IntQueue* q);&#xa;int Size(const IntQueue* q);&#xa;int IsEmpty(const IntQueue* q);&#xa;int IsFull(const IntQueue* q);&#xa;int Search(const IntQueue* q, int x);&#xa;void Print(const IntQueue* q);&#xa;void Terminate(IntQueue* q);" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="BUVMTsfh7bfcfftBCkiT-22">
+          <mxGeometry y="144" width="350" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="BUVMTsfh7bfcfftBCkiT-30" target="BUVMTsfh7bfcfftBCkiT-31">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-30" value="int Enque(IntQueue* q, int x)" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="-190" y="445" width="180" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-33" value="false" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="BUVMTsfh7bfcfftBCkiT-31" target="BUVMTsfh7bfcfftBCkiT-37">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-100" y="675" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-34" value="true" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="BUVMTsfh7bfcfftBCkiT-31" target="BUVMTsfh7bfcfftBCkiT-35">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="30" y="585" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-31" value="q-&gt;max== q-&gt;num" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="-175" y="535" width="150" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-35" value="return -1;" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="30" y="565" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-38" value="true" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="BUVMTsfh7bfcfftBCkiT-37" target="BUVMTsfh7bfcfftBCkiT-39">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="20" y="735" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-40" value="false" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="BUVMTsfh7bfcfftBCkiT-37" target="BUVMTsfh7bfcfftBCkiT-41">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-100" y="835" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-37" value="q-&amp;gt;num == 0" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="-150" y="685" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-39" value="q-&gt;que[q-&gt;rear] = x;&#xa;			q-&gt;num++;" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="20" y="715" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-43" value="true" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="BUVMTsfh7bfcfftBCkiT-41" target="BUVMTsfh7bfcfftBCkiT-42">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-44" value="false" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="BUVMTsfh7bfcfftBCkiT-41" target="BUVMTsfh7bfcfftBCkiT-45">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-100" y="985" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-41" value="q-&gt;rear + 1 == q-&gt;max" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="-165" y="845" width="130" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-48" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="BUVMTsfh7bfcfftBCkiT-42" target="BUVMTsfh7bfcfftBCkiT-47">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-42" value="q-&gt;rear = 0;&#xa;				q-&gt;que[q-&gt;rear] = x;&#xa;				q-&gt;num++;" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="30" y="860" width="120" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-46" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="BUVMTsfh7bfcfftBCkiT-45" target="BUVMTsfh7bfcfftBCkiT-47">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-100" y="1095" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-45" value="q-&gt;que[++q-&gt;rear] = x;&#xa;				q-&gt;num++;" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="-165" y="985" width="130" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-47" value="return 1;" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="-10" y="1075" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-51" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="BUVMTsfh7bfcfftBCkiT-49" target="BUVMTsfh7bfcfftBCkiT-50">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-49" value="int Deque(IntQueue* q, int* x)" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="310" y="10" width="170" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-52" value="true" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="BUVMTsfh7bfcfftBCkiT-50" target="BUVMTsfh7bfcfftBCkiT-53">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="509.9999999999998" y="150" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-54" value="false" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="BUVMTsfh7bfcfftBCkiT-50" target="BUVMTsfh7bfcfftBCkiT-55">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="394.9999999999998" y="260.00000000000045" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-50" value="q-&gt;num== 0" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="345" y="100" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-53" value="return -1;" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="510" y="130" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-56" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="BUVMTsfh7bfcfftBCkiT-55" target="BUVMTsfh7bfcfftBCkiT-57">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="392.4999999999998" y="389.99999999999955" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-55" value="*x = q-&gt;que[q-&gt;front];&#xa;		q-&gt;que[q-&gt;front] = 0;" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="320" y="270" width="145" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-58" value="true" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="BUVMTsfh7bfcfftBCkiT-57" target="BUVMTsfh7bfcfftBCkiT-59">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="509.9999999999998" y="439.99999999999955" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-64" value="false" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="BUVMTsfh7bfcfftBCkiT-57" target="BUVMTsfh7bfcfftBCkiT-63">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="460" y="440" />
+              <mxPoint x="460" y="650" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-57" value="q-&gt;front != q-&gt;rear" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="341.9999999999998" y="389.99999999999955" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-62" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="BUVMTsfh7bfcfftBCkiT-59" target="BUVMTsfh7bfcfftBCkiT-63">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="389.9999999999998" y="639.9999999999995" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-59" value="q-&gt;front++;" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="340" y="540" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-66" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="BUVMTsfh7bfcfftBCkiT-63" target="BUVMTsfh7bfcfftBCkiT-65">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-63" value="q-&gt;num--;" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="340" y="630" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-67" value="true" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="BUVMTsfh7bfcfftBCkiT-65" target="BUVMTsfh7bfcfftBCkiT-68">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="390" y="860" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-71" value="false" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="BUVMTsfh7bfcfftBCkiT-65" target="BUVMTsfh7bfcfftBCkiT-70">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="475" y="760" />
+              <mxPoint x="475" y="950" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-65" value="q-&gt;front == q-&gt;max" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="325" y="710" width="130" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-69" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="BUVMTsfh7bfcfftBCkiT-68" target="BUVMTsfh7bfcfftBCkiT-70">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="390" y="940" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-68" value="q-&gt;front = 0;" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="340" y="860" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-70" value="return 1;" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="340" y="930" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-74" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="BUVMTsfh7bfcfftBCkiT-73" target="BUVMTsfh7bfcfftBCkiT-76">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-962" y="510" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-73" value="puts(&quot;큐의 생성에 실패하였습니다.&quot;);" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.document2;whiteSpace=wrap;size=0.25;" vertex="1" parent="1">
+          <mxGeometry x="-923" y="330" width="205" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-78" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="BUVMTsfh7bfcfftBCkiT-75" target="BUVMTsfh7bfcfftBCkiT-79">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-974" y="590" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-75" value="while(1)" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.loop_limit;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="-1024" y="470" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-76" value="return 1;" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="-870.5" y="450" width="100" height="35.5" as="geometry" />
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-81" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="BUVMTsfh7bfcfftBCkiT-79" target="BUVMTsfh7bfcfftBCkiT-80">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-79" value="int m, x;" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="-1024" y="560" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-82" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="BUVMTsfh7bfcfftBCkiT-80" target="BUVMTsfh7bfcfftBCkiT-83">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-973" y="790" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-80" value="printf(&quot;현재 데이터 수 : %d /%d \n&quot;, Size(&amp;que), Capacity(&amp;que));&#xa;		printf(&quot;(1)인큐 (2)디큐 (3)피크 (4)검색 (5)출력 (0)종료 : &quot;);" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.document2;whiteSpace=wrap;size=0.25;" vertex="1" parent="1">
+          <mxGeometry x="-1138" y="640" width="330" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-86" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="BUVMTsfh7bfcfftBCkiT-83" target="BUVMTsfh7bfcfftBCkiT-87">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-973" y="900" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-83" value="scanf(&quot;%d&quot;, &amp;m);" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=1;arcSize=12;size=0.23;" vertex="1" parent="1">
+          <mxGeometry x="-1023" y="800" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-88" value="true" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="BUVMTsfh7bfcfftBCkiT-87" target="BUVMTsfh7bfcfftBCkiT-89">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-873" y="950" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-90" value="false" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="BUVMTsfh7bfcfftBCkiT-87" target="BUVMTsfh7bfcfftBCkiT-91">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-349" y="1060" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-87" value="(m == 0)" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="-1024" y="900" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-143" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="BUVMTsfh7bfcfftBCkiT-89" target="BUVMTsfh7bfcfftBCkiT-144">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-833" y="1060" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-89" value="break;" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="-870.5" y="930" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-92" value="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="BUVMTsfh7bfcfftBCkiT-91" target="BUVMTsfh7bfcfftBCkiT-96">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-712.9411764705883" y="1075" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-94" value="2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="BUVMTsfh7bfcfftBCkiT-91" target="BUVMTsfh7bfcfftBCkiT-113">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-610.5" y="1060" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-119" value="3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="BUVMTsfh7bfcfftBCkiT-91" target="BUVMTsfh7bfcfftBCkiT-122">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-584" y="1105" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="-823" y="1170" />
+              <mxPoint x="-823" y="1520" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-138" value="4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="BUVMTsfh7bfcfftBCkiT-91" target="BUVMTsfh7bfcfftBCkiT-129">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-141" value="5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="BUVMTsfh7bfcfftBCkiT-91" target="BUVMTsfh7bfcfftBCkiT-142">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-268" y="1320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-91" value="switch (m)" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="-1025" y="1070" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-98" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.591;entryY=-0.057;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="BUVMTsfh7bfcfftBCkiT-96" target="BUVMTsfh7bfcfftBCkiT-97">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-96" value="printf(&quot;데이터 : &quot;);" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.document2;whiteSpace=wrap;size=0.25;" vertex="1" parent="1">
+          <mxGeometry x="-1545" y="1245" width="100" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-99" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="BUVMTsfh7bfcfftBCkiT-97" target="BUVMTsfh7bfcfftBCkiT-100">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-1505" y="1440" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-97" value="scanf(&quot;%d&quot;, &amp;x);" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=1;arcSize=12;size=0.23;" vertex="1" parent="1">
+          <mxGeometry x="-1555" y="1330" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-101" value="true" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="BUVMTsfh7bfcfftBCkiT-100" target="BUVMTsfh7bfcfftBCkiT-102">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-1505" y="1570" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-103" value="false" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="BUVMTsfh7bfcfftBCkiT-100" target="BUVMTsfh7bfcfftBCkiT-104">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-1305" y="1550" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="-1365" y="1480" />
+              <mxPoint x="-1365" y="1665" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-100" value="Enque(&amp;que, x) == -1" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="-1565" y="1430" width="120" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-105" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="BUVMTsfh7bfcfftBCkiT-102" target="BUVMTsfh7bfcfftBCkiT-104">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-102" value="puts(&quot;\a오류 : 인큐에 실패하였습니다.&quot;);" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.document2;whiteSpace=wrap;size=0.25;" vertex="1" parent="1">
+          <mxGeometry x="-1620" y="1560" width="230" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-104" value="break;" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="-1555" y="1650" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-111" value="true" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="BUVMTsfh7bfcfftBCkiT-113" target="BUVMTsfh7bfcfftBCkiT-115">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-1214" y="1400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-112" value="false" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.532;entryY=0.02;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="BUVMTsfh7bfcfftBCkiT-113" target="BUVMTsfh7bfcfftBCkiT-117">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-1014" y="1380" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="-1035" y="1310" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-113" value="Deque(&amp;amp;que, &amp;amp;x) == -1" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="-1274" y="1260" width="120" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-114" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="BUVMTsfh7bfcfftBCkiT-115" target="BUVMTsfh7bfcfftBCkiT-116">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-115" value="puts(&quot;\a오류 : 디큐에 실패하였습니다.&quot;);" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.document2;whiteSpace=wrap;size=0.25;" vertex="1" parent="1">
+          <mxGeometry x="-1390" y="1390" width="230" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-116" value="break;" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="-1209" y="1490" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-118" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="BUVMTsfh7bfcfftBCkiT-117" target="BUVMTsfh7bfcfftBCkiT-116">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-117" value="printf(&quot;디큐한 데이터는 %d입니다.\n&quot;,x);" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.document2;whiteSpace=wrap;size=0.25;" vertex="1" parent="1">
+          <mxGeometry x="-1160" y="1390" width="235" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-120" value="true" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="BUVMTsfh7bfcfftBCkiT-122" target="BUVMTsfh7bfcfftBCkiT-124">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-989" y="1660" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-121" value="false" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.532;entryY=0.02;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="BUVMTsfh7bfcfftBCkiT-122" target="BUVMTsfh7bfcfftBCkiT-127">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-789" y="1640" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="-810" y="1570" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-122" value="Peek(&amp;amp;que, &amp;amp;x) == -1" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="-1049" y="1520" width="120" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-123" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="BUVMTsfh7bfcfftBCkiT-124" target="BUVMTsfh7bfcfftBCkiT-125">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-124" value="puts(&quot;\a오류 : 피크에 실패하였습니다.&quot;);" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.document2;whiteSpace=wrap;size=0.25;" vertex="1" parent="1">
+          <mxGeometry x="-1165" y="1650" width="230" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-125" value="break;" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="-984" y="1750" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-126" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="BUVMTsfh7bfcfftBCkiT-127" target="BUVMTsfh7bfcfftBCkiT-125">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-127" value="printf(&quot;피크한 데이터는 %d입니다.\n&quot;, x);" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.document2;whiteSpace=wrap;size=0.25;" vertex="1" parent="1">
+          <mxGeometry x="-935" y="1650" width="235" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-128" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.591;entryY=-0.057;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="BUVMTsfh7bfcfftBCkiT-129" target="BUVMTsfh7bfcfftBCkiT-131">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-129" value="printf(&quot;데이터 : &quot;);" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.document2;whiteSpace=wrap;size=0.25;" vertex="1" parent="1">
+          <mxGeometry x="-620" y="1275" width="100" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-130" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="BUVMTsfh7bfcfftBCkiT-131" target="BUVMTsfh7bfcfftBCkiT-134">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-580" y="1470" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-131" value="scanf(&quot;%d&quot;, &amp;x);" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=1;arcSize=12;size=0.23;" vertex="1" parent="1">
+          <mxGeometry x="-630" y="1360" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-132" value="true" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="BUVMTsfh7bfcfftBCkiT-134" target="BUVMTsfh7bfcfftBCkiT-136">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-580" y="1600" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-133" value="false" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="BUVMTsfh7bfcfftBCkiT-134" target="BUVMTsfh7bfcfftBCkiT-139">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-380" y="1580" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="-415" y="1510" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-134" value="Search(&amp;amp;que, x) == -1" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="-640" y="1460" width="120" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-135" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="BUVMTsfh7bfcfftBCkiT-136" target="BUVMTsfh7bfcfftBCkiT-137">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-136" value="puts(&quot;\a오류 : 검색에 실패하였습니다.&quot;);" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.document2;whiteSpace=wrap;size=0.25;" vertex="1" parent="1">
+          <mxGeometry x="-772.5" y="1590" width="230" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-137" value="break;" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="-605" y="1695" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-140" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="BUVMTsfh7bfcfftBCkiT-139" target="BUVMTsfh7bfcfftBCkiT-137">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-139" value="printf(&quot;검색한 데이터는 %d입니다.\n&quot;, x);" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.document2;whiteSpace=wrap;size=0.25;" vertex="1" parent="1">
+          <mxGeometry x="-533" y="1592" width="235" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-142" value="Print(&amp;que);&#xa;			break;" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="-403" y="1240" width="100" height="72.5" as="geometry" />
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-144" value="Terminate(&amp;amp;que);&lt;br&gt;return 0;" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="-870.5" y="1019" width="100" height="51" as="geometry" />
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-146" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="BUVMTsfh7bfcfftBCkiT-145" target="BUVMTsfh7bfcfftBCkiT-147">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-80" y="1290" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-145" value="int Peek(const IntQueue* q, int* x)" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="-180" y="1170" width="210" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-148" value="true" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="BUVMTsfh7bfcfftBCkiT-147" target="BUVMTsfh7bfcfftBCkiT-149">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-75" y="1420" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-150" value="false" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="BUVMTsfh7bfcfftBCkiT-147" target="BUVMTsfh7bfcfftBCkiT-151">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="30" y="1325" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-147" value="q-&gt;num == 0" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="-125" y="1275" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-149" value="return -1;" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="-125" y="1420" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-151" value="*x = q-&gt;que[q-&gt;rear];&#xa;		return 1;" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="20" y="1292.5" width="140" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-153" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="BUVMTsfh7bfcfftBCkiT-152" target="BUVMTsfh7bfcfftBCkiT-154">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-505" y="755" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-152" value="void Clear(IntQueue* q)" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="-575" y="675" width="140" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-155" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="BUVMTsfh7bfcfftBCkiT-154" target="BUVMTsfh7bfcfftBCkiT-158">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-505" y="875" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-154" value="(int i = 0; i++)" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.loop_limit;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="-555" y="765" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-160" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="BUVMTsfh7bfcfftBCkiT-156" target="BUVMTsfh7bfcfftBCkiT-161">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-505" y="1025" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-156" value="" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.loop_limit;whiteSpace=wrap;rotation=-180;" vertex="1" parent="1">
+          <mxGeometry x="-555" y="935" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-157" value="&#xa;&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(248, 249, 250); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;&quot;&gt;i &amp;lt; q-&amp;gt;max&lt;/span&gt;&#xa;&#xa;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-540" y="950" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-159" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="BUVMTsfh7bfcfftBCkiT-158" target="BUVMTsfh7bfcfftBCkiT-156">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-158" value="q-&gt;que[i] = 0;" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="-555" y="845" width="100" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-161" value="q-&gt;num = 0;&#xa;	q-&gt;front = 0;&#xa;	q-&gt;rear = 0;" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="-555" y="1035" width="100" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-163" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="BUVMTsfh7bfcfftBCkiT-162" target="BUVMTsfh7bfcfftBCkiT-164">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-280" y="770" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-162" value="int Capacity(const IntQueue* q)" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="-370" y="705" width="180" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-164" value="return q-&gt;max;" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="-330" y="770" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-165" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="BUVMTsfh7bfcfftBCkiT-166" target="BUVMTsfh7bfcfftBCkiT-167">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-290" y="905" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-166" value="&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;int Size(const IntQueue* q)&lt;/span&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="-380" y="840" width="180" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-167" value="return q-&amp;gt;num;" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="-340" y="905" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-168" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="BUVMTsfh7bfcfftBCkiT-169" target="BUVMTsfh7bfcfftBCkiT-172">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-510" y="155" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-169" value="int IsEmpty(const IntQueue* q)" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="-610" y="35" width="210" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-170" value="true" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="BUVMTsfh7bfcfftBCkiT-172" target="BUVMTsfh7bfcfftBCkiT-173">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-505" y="285" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-171" value="false" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="BUVMTsfh7bfcfftBCkiT-172" target="BUVMTsfh7bfcfftBCkiT-174">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-400" y="190" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-172" value="q-&gt;num == 0" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="-555" y="140" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-173" value="return 1;" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="-555" y="285" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-174" value="return 0;" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="-410" y="157.5" width="140" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-175" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="BUVMTsfh7bfcfftBCkiT-176" target="BUVMTsfh7bfcfftBCkiT-179">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-510" y="470" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-176" value="int IsFull(const IntQueue* q)" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="-610" y="350" width="210" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-177" value="true" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="BUVMTsfh7bfcfftBCkiT-179" target="BUVMTsfh7bfcfftBCkiT-180">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-505" y="600" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-178" value="false" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="BUVMTsfh7bfcfftBCkiT-179" target="BUVMTsfh7bfcfftBCkiT-181">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-400" y="505" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-179" value="q-&amp;gt;num==q-&amp;gt;max" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="-555" y="455" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-180" value="return 1;" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="-555" y="600" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-181" value="return 0;" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="-410" y="472.5" width="140" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-183" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="BUVMTsfh7bfcfftBCkiT-182" target="BUVMTsfh7bfcfftBCkiT-184">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="290" y="1150" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-182" value="int Search(const IntQueue* q, int x)" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="175" y="1035" width="220" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-185" value="true" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="BUVMTsfh7bfcfftBCkiT-184" target="BUVMTsfh7bfcfftBCkiT-186">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="285" y="1280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-204" value="false" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="BUVMTsfh7bfcfftBCkiT-184" target="BUVMTsfh7bfcfftBCkiT-206">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="570" y="1200" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-184" value="q-&gt;front &gt; q-&gt;rear" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="235" y="1120" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-187" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="BUVMTsfh7bfcfftBCkiT-186" target="BUVMTsfh7bfcfftBCkiT-188">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="285" y="1420" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-186" value="int i = q-&amp;gt;front; i++" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.loop_limit;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="197.5" y="1272.5" width="175" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-189" value="true" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="BUVMTsfh7bfcfftBCkiT-188" target="BUVMTsfh7bfcfftBCkiT-190">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="285" y="1510" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-191" value="false" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="BUVMTsfh7bfcfftBCkiT-188" target="BUVMTsfh7bfcfftBCkiT-193">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="285" y="1580" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-188" value="q-&gt;que[i] == x" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="235" y="1370" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-190" value="return 1;" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="410" y="1400" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-203" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="BUVMTsfh7bfcfftBCkiT-193" target="BUVMTsfh7bfcfftBCkiT-196">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-193" value="" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.loop_limit;whiteSpace=wrap;rotation=-180;" vertex="1" parent="1">
+          <mxGeometry x="235" y="1530" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-194" value="&#xa;&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(248, 249, 250); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;&quot;&gt;&lt;span&gt;&amp;nbsp;&lt;/span&gt;i &amp;lt; q-&amp;gt;max;&lt;/span&gt;&#xa;&#xa;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="242.5" y="1545" width="85" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-195" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="BUVMTsfh7bfcfftBCkiT-196" target="BUVMTsfh7bfcfftBCkiT-199">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="285" y="1767.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-196" value="int i = q-&amp;gt;rear; i++" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.loop_limit;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="197.5" y="1620" width="175" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-197" value="true" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="BUVMTsfh7bfcfftBCkiT-199" target="BUVMTsfh7bfcfftBCkiT-200">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="285" y="1857.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-198" value="false" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="BUVMTsfh7bfcfftBCkiT-199" target="BUVMTsfh7bfcfftBCkiT-201">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="285" y="1927.5" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-199" value="q-&gt;que[i] == x" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="235" y="1717.5" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-200" value="return 1;" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="410" y="1747.5" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-201" value="" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.loop_limit;whiteSpace=wrap;rotation=-180;" vertex="1" parent="1">
+          <mxGeometry x="192" y="1875" width="185" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-214" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="BUVMTsfh7bfcfftBCkiT-202" target="BUVMTsfh7bfcfftBCkiT-213">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-202" value="&amp;nbsp;i &amp;lt; q-&amp;gt;num-(q-&amp;gt;max-q-&amp;gt;front)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="188.5" y="1890" width="187.5" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-205" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="BUVMTsfh7bfcfftBCkiT-206" target="BUVMTsfh7bfcfftBCkiT-209">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="577.5" y="1397.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-206" value="int i = q-&amp;gt;front; i++" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.loop_limit;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="490" y="1250" width="175" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-207" value="true" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="BUVMTsfh7bfcfftBCkiT-209" target="BUVMTsfh7bfcfftBCkiT-210">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="577.5" y="1487.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-208" value="false" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="BUVMTsfh7bfcfftBCkiT-209" target="BUVMTsfh7bfcfftBCkiT-211">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="577.5" y="1557.5" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-209" value="q-&gt;que[i] == x" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="527.5" y="1347.5" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-210" value="return 1;" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="702.5" y="1377.5" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-215" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="BUVMTsfh7bfcfftBCkiT-211" target="BUVMTsfh7bfcfftBCkiT-213">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-211" value="" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.loop_limit;whiteSpace=wrap;rotation=-180;" vertex="1" parent="1">
+          <mxGeometry x="527.5" y="1507.5" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-212" value="i &amp;lt; q-&amp;gt;rear;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="535" y="1522.5" width="85" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-213" value="return -1;" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="527.5" y="1885" width="100" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-217" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="BUVMTsfh7bfcfftBCkiT-216" target="BUVMTsfh7bfcfftBCkiT-218">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-82.5" y="1611.25" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-216" value="void Print(const IntQueue* q)" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="-192.5" y="1481.25" width="230" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-219" value="true" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="BUVMTsfh7bfcfftBCkiT-218" target="BUVMTsfh7bfcfftBCkiT-250">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-75" y="1770" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-220" value="false" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="BUVMTsfh7bfcfftBCkiT-218" target="BUVMTsfh7bfcfftBCkiT-249">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="40" y="1730" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-218" value="!IsEmpty(q)" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="-127.5" y="1558.75" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-221" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="BUVMTsfh7bfcfftBCkiT-222" target="BUVMTsfh7bfcfftBCkiT-244">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-233.50000000000045" y="1885" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-222" value="int i = q-&amp;gt;front; i++" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.loop_limit;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="-321" y="1780" width="175" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-227" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="BUVMTsfh7bfcfftBCkiT-228" target="BUVMTsfh7bfcfftBCkiT-231">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-228" value="" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.loop_limit;whiteSpace=wrap;rotation=-180;" vertex="1" parent="1">
+          <mxGeometry x="-283.5" y="1960" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-229" value="&#xa;&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(248, 249, 250); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;&quot;&gt;&lt;span&gt;&amp;nbsp;&lt;/span&gt;i &amp;lt; q-&amp;gt;max;&lt;/span&gt;&#xa;&#xa;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-280" y="1975" width="85" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-230" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="BUVMTsfh7bfcfftBCkiT-231" target="BUVMTsfh7bfcfftBCkiT-247">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-234.0434782608695" y="2130" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-231" value="int i = q-&amp;gt;rear; i++" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.loop_limit;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="-321.5" y="2050" width="175" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-236" value="" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.loop_limit;whiteSpace=wrap;rotation=-180;" vertex="1" parent="1">
+          <mxGeometry x="-326.5" y="2230" width="185" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-237" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="BUVMTsfh7bfcfftBCkiT-238" target="BUVMTsfh7bfcfftBCkiT-249">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-90" y="2250" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-238" value="&amp;nbsp;i &amp;lt; q-&amp;gt;num-(q-&amp;gt;max-q-&amp;gt;front)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-330" y="2235" width="187.5" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-240" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.485;exitY=0.895;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="BUVMTsfh7bfcfftBCkiT-244" target="BUVMTsfh7bfcfftBCkiT-228">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-233.4347826086955" y="1925" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-243" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.485;exitY=0.917;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="BUVMTsfh7bfcfftBCkiT-247" target="BUVMTsfh7bfcfftBCkiT-236">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-234.0434782608695" y="2190" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-244" value="printf(&quot;%d &quot;, q-&gt;que[i]);" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.document2;whiteSpace=wrap;size=0.25;" vertex="1" parent="1">
+          <mxGeometry x="-305.5" y="1872.5" width="144" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-247" value="printf(&quot;%d &quot;, q-&gt;que[i]);" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.document2;whiteSpace=wrap;size=0.25;" vertex="1" parent="1">
+          <mxGeometry x="-305.5" y="2140" width="144" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-249" value="printf(&quot;\n&quot;);" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.document2;whiteSpace=wrap;size=0.25;" vertex="1" parent="1">
+          <mxGeometry x="41" y="2220" width="144" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-251" value="true" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="BUVMTsfh7bfcfftBCkiT-250" target="BUVMTsfh7bfcfftBCkiT-222">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-252" value="false" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="BUVMTsfh7bfcfftBCkiT-250" target="BUVMTsfh7bfcfftBCkiT-254">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="10" y="1870" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-250" value="q-&gt;front &gt; q-&gt;rear" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="-130" y="1695" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-253" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="BUVMTsfh7bfcfftBCkiT-254" target="BUVMTsfh7bfcfftBCkiT-258">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="2.4999999999995453" y="1995" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-254" value="int i = q-&amp;gt;front; i++" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.loop_limit;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="-85" y="1890" width="175" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-260" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="BUVMTsfh7bfcfftBCkiT-255" target="BUVMTsfh7bfcfftBCkiT-249">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-255" value="" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.loop_limit;whiteSpace=wrap;rotation=-180;" vertex="1" parent="1">
+          <mxGeometry x="-47.5" y="2070" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-256" value="i &lt; q-&gt;rear + 1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-44" y="2085" width="85" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-257" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.485;exitY=0.895;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="BUVMTsfh7bfcfftBCkiT-258" target="BUVMTsfh7bfcfftBCkiT-255">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="2.5652173913044862" y="2035" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-258" value="printf(&quot;%d &quot;, q-&gt;que[i]);" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.document2;whiteSpace=wrap;size=0.25;" vertex="1" parent="1">
+          <mxGeometry x="-69.5" y="1982.5" width="144" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-262" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="BUVMTsfh7bfcfftBCkiT-261" target="BUVMTsfh7bfcfftBCkiT-263">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="305" y="2090" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-261" value="void Terminate(IntQueue* q)" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="220" y="2000" width="170" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="BUVMTsfh7bfcfftBCkiT-263" value="delete(q-&gt;que);" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="255" y="2085" width="100" height="45" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

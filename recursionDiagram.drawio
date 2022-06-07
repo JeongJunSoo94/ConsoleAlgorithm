@@ -1,0 +1,87 @@
+<mxfile host="app.diagrams.net" modified="2022-06-07T08:13:22.503Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36" etag="N8llm7cma6iEq8P8MozK" version="19.0.1" type="github">
+  <diagram id="N81YjZupv2jfNy2VlcBD" name="Page-1">
+    <mxGraphModel dx="1151" dy="1207" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="MYGT9MEpWuYWAByY2jec-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="MYGT9MEpWuYWAByY2jec-1" target="MYGT9MEpWuYWAByY2jec-3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="160" y="290" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MYGT9MEpWuYWAByY2jec-1" value="start" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="110" y="170" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="MYGT9MEpWuYWAByY2jec-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="MYGT9MEpWuYWAByY2jec-3" target="MYGT9MEpWuYWAByY2jec-5">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="160" y="370" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MYGT9MEpWuYWAByY2jec-3" value="reverseDisplay(12345);" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="90" y="270" width="140" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="MYGT9MEpWuYWAByY2jec-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="MYGT9MEpWuYWAByY2jec-5" target="MYGT9MEpWuYWAByY2jec-7">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="160" y="470" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MYGT9MEpWuYWAByY2jec-5" value="reverseDisplay(&quot;abcd&quot;);" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="95" y="360" width="130" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="MYGT9MEpWuYWAByY2jec-7" value="end" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="110" y="450" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="MYGT9MEpWuYWAByY2jec-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="MYGT9MEpWuYWAByY2jec-8" target="MYGT9MEpWuYWAByY2jec-10">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="410" y="240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MYGT9MEpWuYWAByY2jec-8" value="void reverseDisplay(int value)" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="330" y="150" width="160" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="MYGT9MEpWuYWAByY2jec-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="MYGT9MEpWuYWAByY2jec-10" target="MYGT9MEpWuYWAByY2jec-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="MYGT9MEpWuYWAByY2jec-10" value="value != 0" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="360" y="245" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="MYGT9MEpWuYWAByY2jec-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="MYGT9MEpWuYWAByY2jec-11" target="MYGT9MEpWuYWAByY2jec-15">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="410" y="495" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MYGT9MEpWuYWAByY2jec-11" value="printf(&quot;%d&quot;, value % 10);" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.document2;whiteSpace=wrap;size=0.25;" vertex="1" parent="1">
+          <mxGeometry x="335" y="380" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="MYGT9MEpWuYWAByY2jec-15" value="reverseDisplay(value / 10);" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="330" y="480" width="160" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="MYGT9MEpWuYWAByY2jec-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="MYGT9MEpWuYWAByY2jec-17" target="MYGT9MEpWuYWAByY2jec-19">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="610" y="240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MYGT9MEpWuYWAByY2jec-17" value="void reverseDisplay(int value)" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="530" y="150" width="160" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="MYGT9MEpWuYWAByY2jec-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="MYGT9MEpWuYWAByY2jec-19" target="MYGT9MEpWuYWAByY2jec-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="MYGT9MEpWuYWAByY2jec-19" value="s.size() != 0" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="560" y="245" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="MYGT9MEpWuYWAByY2jec-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="MYGT9MEpWuYWAByY2jec-21" target="MYGT9MEpWuYWAByY2jec-22">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="610" y="495" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MYGT9MEpWuYWAByY2jec-21" value="printf(&quot;%c&quot;, s[s.size()-1]);" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.document2;whiteSpace=wrap;size=0.25;" vertex="1" parent="1">
+          <mxGeometry x="535" y="380" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="MYGT9MEpWuYWAByY2jec-22" value="reverseDisplay(s.substr(0,s.size()-1));" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="530" y="480" width="160" height="50" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
