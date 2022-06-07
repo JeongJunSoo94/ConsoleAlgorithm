@@ -51,25 +51,115 @@
 *     cab
 *     cba
 */
-#define _CRT_SECURE_NO_WARNINGS
-#include<stdio.h>
+
+#include<iostream>
 #include<string>
 
-void reverseDisplay(const std::string& s,int n)
+using namespace std;
+void Swap(string &str, int num1, int num2)
 {
-	if (n != 0&&n!=s.size())
+	char temp = str[num1];
+	str[num1] = str[num2];
+	str[num2] = temp;
+}
+void Permutation(string &str, int index, int str_size)
+{
+	if (str_size - 1 == index)
 	{
-		reverseDisplay(s, n - 1);
-		printf("%c", s[n - 1]);
+		for (int i = 0; i < str_size; ++i)
+		{
+			cout<< str[i];
+		}
+		cout<<endl;
+		return;
+	}
+
+	for (int i = index; i < str_size; ++i)
+	{
+		Swap(str, index, i);
+		Permutation(str, index + 1, str_size);
+		Swap(str, index, i);
+	}
+}
+void Combination(string str, int n, int r, int index, int target, string comb_str)
+{
+	if (r == 0)
+	{
+		Permutation(comb_str, 0, str.size());
+		cout<<endl;
+	}
+	else if (target == n)
+	{
+		return;
+	}
+	else
+	{
+		comb_str[index] = str[target];
+		Combination(str, n, r - 1, index + 1, target + 1, comb_str);
+		Combination(str, n, r, index, target + 1, comb_str);
 	}
 }
 
 int main()
 {
-	reverseDisplay("abc",3);
+	string str="abc";
 
-	return 0;
+	//string comb_str(str.size(), ' ');
+
+	//Combination(str, str.size(), str.size(), 0, 0, comb_str);
+
+	Permutation(str, 0, str.size());
 }
+
+//#include <iostream>
+//#include <vector>
+//using namespace std;
+//
+//void permutations(string s)
+//{
+//    int n = s.length();
+//
+//    if (n == 0) {
+//        return;
+//    }
+//
+//    vector<int> index(n,0);
+//    for (int i = 0; i < n; i++)
+//    {
+//        index[i] = 0;
+//    }
+//
+//    int i = 1, j = 0;
+//
+//    cout << s;
+//
+//    while (i < n)
+//    {
+//        if (index[i] < i)
+//        {
+//            j = (i % 2) * index[i];
+//
+//            swap(s[j], s[i]);
+//
+//            cout << endl << s;
+//
+//            index[i]++;
+//            i = 1;
+//        }
+//        else {
+//            index[i] = 0;
+//            i++;
+//        }
+//    }
+//}
+//
+//int main()
+//{
+//    string str = "abc";
+//    permutations(str);
+//
+//    return 0;
+//}
 
 //     a0        b1        c2
 //    b1 c2    a0  c2    a0  b1

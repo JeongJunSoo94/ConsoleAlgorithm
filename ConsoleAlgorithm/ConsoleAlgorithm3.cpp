@@ -1,6 +1,3 @@
-/*
-* 128 문제
-*/
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 #include <stdlib.h>
@@ -28,114 +25,130 @@ int npcmp(const Person* x, const Person* y)
 
 void* bsearchx(const void* key, const void* base, size_t nmemb, size_t size, int(*compar)(const void*, const void*))
 {
-	nmemb* size;
 	int index = 0, start = 0, end = nmemb - 1;
-	switch (size)
+	while (start <= end)
 	{
-		case 1:
-			while (start <= end)
+		index = (start + end) / 2;
+		if (compar((char*)base + index*size, (char*)key) == 0)
+		{
+			while (compar((char*)base + index * size, (char*)key) == 0)
 			{
-				index = (start + end) / 2;
-				if (compar((char*)base + index, key) == 0)
-				{
-					while (compar((char*)base + index, (char*)key) == 0)
-					{
-						index -= 1;
-					}
-					return (char*)base + index + 1;
-				}
-				else if (compar((char*)base + index, (char*)key) == -1)
-				{
-					start = index + 1;
-				}
-				else
-				{
-					end = index - 1;
-				}
+				index -= 1;
 			}
-			break;
-		case 4:
-			while (start <= end)
-			{
-				index = (start + end) / 2;
-				if (compar((int*)base + index, key) == 0)
-				{
-					while (compar((int*)base + index, (int*)key) == 0)
-					{
-						index -= 1;
-					}
-					return (int*)base + index + 1;
-				}
-				else if (compar((int*)base + index, (int*)key) == -1)
-				{
-					start = index + 1;
-				}
-				else
-				{
-					end = index - 1;
-				}
-			}
-			break;
-		case 8:
-			while (start <= end)
-			{
-				index = (start + end) / 2;
-				if (compar((double*)base + index, key) == 0)
-				{
-					while (compar((double*)base + index, (double*)key) == 0)
-					{
-						index -= 1;
-					}
-					return (double*)base + index + 1;
-				}
-				else if (compar((double*)base + index, (double*)key) == -1)
-				{
-					start = index + 1;
-				}
-				else
-				{
-					end = index - 1;
-				}
-			}
-			break;
+			return (char*)base + (index+1) * size;
+		}
+		else if (compar((char*)base + index * size, (char*)key) == -1)
+		{
+			start = index + 1;
+		}
+		else
+		{
+			end = index - 1;
+		}
 	}
-	
 }
 
-int main(void)
+int main()
 {
-	int i, nx, ky;
-	int *x;
-	int *p;
+	int i, nx1, ky;
+	int* x1;
+	int* p1;
 	puts("bsearch 함수를 사용하여 검색");
 	printf("요소 개수 : ");
-	scanf("%d", &nx);
-	x =(int*) calloc(nx, sizeof(int));
+	scanf("%d", &nx1);
+	x1 = (int*)calloc(nx1, sizeof(int));
 
 	printf("오름차순으로 입력하세요.\n");
 	printf("x[0] : ");
-	scanf("%d", &x[0]);
-	for (i = 1; i < nx; i++)
+	scanf("%d", &x1[0]);
+	for (i = 1; i < nx1; i++)
 	{
 		do {
 			printf("x[%d] : ", i);
-			scanf("%d", &x[i]);
-		} while (x[i] < x[i - 1]);
+			scanf("%d", &x1[i]);
+		} while (x1[i] < x1[i - 1]);
 	}
 	printf("검색값 : ");
 	scanf("%d", &ky);
-	p = (int*)bsearchx(&ky, x, nx, sizeof(int), (int(*)(const void*, const void*))int_cmp);
-	if (p == NULL)
+	p1 = (int*)bsearchx(&ky, x1, nx1, sizeof(int), (int(*)(const void*, const void*))int_cmp);
+	if (p1 == NULL)
 	{
 		puts("검색에 실패했습니다.");
 	}
 	else
 	{
-		printf("%d은(는) x[%d]에 있습니다.\n", ky, (int)(p - x));
+		printf("%d은(는) x[%d]에 있습니다.\n", ky, (int)(p1 - x1));
 	}
-	free(x);
+	free(x1);
+
+	Person x[] = 
+	{
+		{"김영준",179,79},
+		{"박현규",172,63},
+		{"이수진",176,52},
+		{"이수진",176,52},
+		{"최윤미",165,51},
+		{"함진아",181,73},
+		{"홍연의",172,84}
+	};
+	int nx = sizeof(x) / sizeof(x[0]);
+	int retry;
+	puts("이름으로 검색합니다.");
+	do {
+		Person temp, * p;
+		printf("이름 : ");
+		scanf("%s", temp.name);
+		p = (Person*)bsearchx(&temp, x, nx, sizeof(Person), (int(*)(const void*, const void*))int_cmp);
+		if (p == NULL)
+		{
+			puts("검색에 실패했습니다.");
+		}
+		else
+		{
+			puts("검색 성공 !! 아래 요소를 찾았습니다.");
+			printf("x[%d] : %s %d cm %d kg\n",
+				(int)(p - x), p->name, p->height, p->weight);
+		}
+		printf("다시 검색할까요 (1) 예/(0) 아니오 : ");
+		scanf("%d",&retry);
+	} while (retry ==1);
 	return 0;
 }
+
+//int main(void)
+//{
+//	int i, nx, ky;
+//	int *x;
+//	int *p;
+//	puts("bsearch 함수를 사용하여 검색");
+//	printf("요소 개수 : ");
+//	scanf("%d", &nx);
+//	x =(int*) calloc(nx, sizeof(int));
+//
+//	printf("오름차순으로 입력하세요.\n");
+//	printf("x[0] : ");
+//	scanf("%d", &x[0]);
+//	for (i = 1; i < nx; i++)
+//	{
+//		do {
+//			printf("x[%d] : ", i);
+//			scanf("%d", &x[i]);
+//		} while (x[i] < x[i - 1]);
+//	}
+//	printf("검색값 : ");
+//	scanf("%d", &ky);
+//	p = (int*)bsearchx(&ky, x, nx, sizeof(int), (int(*)(const void*, const void*))int_cmp);
+//	if (p == NULL)
+//	{
+//		puts("검색에 실패했습니다.");
+//	}
+//	else
+//	{
+//		printf("%d은(는) x[%d]에 있습니다.\n", ky, (int)(p - x));
+//	}
+//	free(x);
+//	return 0;
+//}
 
 //#define _CRT_SECURE_NO_WARNINGS
 //#include <stdio.h>
