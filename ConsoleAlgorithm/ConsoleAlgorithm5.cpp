@@ -52,64 +52,64 @@
 *     cba
 */
 
-#include<iostream>
-#include<string>
-
-using namespace std;
-void Swap(string &str, int num1, int num2)
-{
-	char temp = str[num1];
-	str[num1] = str[num2];
-	str[num2] = temp;
-}
-void Permutation(string &str, int index, int str_size)
-{
-	if (str_size - 1 == index)
-	{
-		for (int i = 0; i < str_size; ++i)
-		{
-			cout<< str[i];
-		}
-		cout<<endl;
-		return;
-	}
-
-	for (int i = index; i < str_size; ++i)
-	{
-		Swap(str, index, i);
-		Permutation(str, index + 1, str_size);
-		Swap(str, index, i);
-	}
-}
-void Combination(string str, int n, int r, int index, int target, string comb_str)
-{
-	if (r == 0)
-	{
-		Permutation(comb_str, 0, str.size());
-		cout<<endl;
-	}
-	else if (target == n)
-	{
-		return;
-	}
-	else
-	{
-		comb_str[index] = str[target];
-		Combination(str, n, r - 1, index + 1, target + 1, comb_str);
-		Combination(str, n, r, index, target + 1, comb_str);
-	}
-}
-
-int main()
-{
-	string str="abc";
-
-	//string comb_str(str.size(), ' ');
-
-	//Combination(str, str.size(), str.size(), 0, 0, comb_str);
-
-	Permutation(str, 0, str.size());
-}
+//#include<iostream>
+//#include<string>
+//
+//using namespace std;
+//void Swap(string &str, int num1, int num2)
+//{
+//	char temp = str[num1];
+//	str[num1] = str[num2];
+//	str[num2] = temp;
+//}
+//void Permutation(string &str, int index, int str_size)
+//{
+//	if (str_size - 1 == index)
+//	{
+//		for (int i = 0; i < str_size; ++i)
+//		{
+//			cout<< str[i];
+//		}
+//		cout<<endl;
+//		return;
+//	}
+//
+//	for (int i = index; i < str_size; ++i)
+//	{
+//		Swap(str, index, i);
+//		Permutation(str, index + 1, str_size);
+//		Swap(str, index, i);
+//	}
+//}
+//void Combination(string str, int n, int r, int index, int target, string comb_str)
+//{
+//	if (r == 0)
+//	{
+//		Permutation(comb_str, 0, str.size());
+//		cout<<endl;
+//	}
+//	else if (target == n)
+//	{
+//		return;
+//	}
+//	else
+//	{
+//		comb_str[index] = str[target];
+//		Combination(str, n, r - 1, index + 1, target + 1, comb_str);
+//		Combination(str, n, r, index, target + 1, comb_str);
+//	}
+//}
+//
+//int main()
+//{
+//	string str="abc";
+//
+//	//string comb_str(str.size(), ' ');
+//
+//	//Combination(str, str.size(), str.size(), 0, 0, comb_str);
+//
+//	Permutation(str, 0, str.size());
+//}
 
 //#include <iostream>
 //#include <vector>
@@ -124,10 +124,6 @@ int main()
 //    }
 //
 //    vector<int> index(n,0);
-//    for (int i = 0; i < n; i++)
-//    {
-//        index[i] = 0;
-//    }
 //
 //    int i = 1, j = 0;
 //
@@ -164,3 +160,7 @@ int main()
 //     a0        b1        c2
 //    b1 c2    a0  c2    a0  b1
 //   c2   b1  c2    a0  b1    a0
+
+/*
+* 
+*/
