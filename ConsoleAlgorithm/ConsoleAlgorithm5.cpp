@@ -164,3 +164,80 @@
 /*
 * 
 */
+
+#include <iostream>
+#include <vector>
+
+using namespace std;
+
+void print(vector<vector<int>>& top, int size)
+{
+	for (int i = size; i > 0; i--)
+	{
+		if (top[0].size() >= i)
+		{
+			cout << "[" << top[0][i - 1] << "]";
+		}
+		else
+		{
+			cout << "[ ]";
+		}
+		if (top[1].size() >= i)
+		{
+			cout << " [" << top[1][i - 1] << "]";
+		}
+		else
+		{
+			cout << " [ ]";
+		}
+		if (top[2].size() >= i)
+		{
+			cout << " [" << top[2][i - 1] << "]";
+		}
+		else
+		{
+			cout << " [ ]";
+		}
+		cout << endl;
+	}
+	cout << " A   B   C" << endl;
+	cout << "--------------" << endl;
+}
+
+void HanoiTowerMove(int num, int size, vector<int>& from, vector<int>& by, vector<int>& to, vector<vector<int>>& top)
+{
+	if (num == 1)
+	{
+		print(top, size);
+		to.push_back(from.back());
+		from.pop_back();
+	}
+	else
+	{
+		HanoiTowerMove(num - 1, size, from, to, by, top);
+		print(top, size);
+		to.push_back(from.back());
+		from.pop_back();
+		HanoiTowerMove(num - 1, size, by, from, to, top);
+	}
+}
+
+int main()
+{
+	int num;
+	vector<int> a;
+	vector<int> b;
+	vector<int> c;
+	cin >> num;
+	for (int i = num; i > 0; i--)
+	{
+		a.push_back(i);
+	}
+	vector<vector<int>> top;
+	top.push_back(a);
+	top.push_back(b);
+	top.push_back(c);
+	HanoiTowerMove(num, num, top[0], top[1], top[2], top);
+	print(top, num);
+	return 0;
+}
