@@ -236,47 +236,99 @@
 //	cout << stop.getElapsedTime();
 //	return 0;
 //}
+//#include <iostream>
+//#include "StopWatch.h"
+//
+//using namespace std;
+//
+//void sort(int* v, int size)
+//{
+//	for (int k = 0; k < size; k++)
+//	{
+//		cout << " ";
+//		cout << v[k];
+//		cout << " ";
+//	}
+//	for (int i =1; i <size; i++)
+//	{
+//		cout << endl;
+//		for (int j = i; j >0; j--)
+//		{
+//			if (v[j - 1] > v[j])
+//			{
+//				int temp = v[j - 1];
+//				v[j - 1] = v[j];
+//				v[j] = temp;
+//			}
+//		}
+//		for (int k = 0; k < size; k++)
+//		{
+//			cout << " ";
+//			cout << v[k];
+//			cout << " ";
+//		}
+//	}
+//}
+//
+//int main()
+//{
+//	StopWatch stop;
+//	int list[7] = { 6,4,1,7,3,9,8 };
+//	stop.setStartTime();
+//		sort(list, 7);
+//	stop.stop();
+//	cout << stop.getElapsedTime();
+//	return 0;
+//}
 #include <iostream>
-#include "StopWatch.h"
 
 using namespace std;
 
 void sort(int* v, int size)
 {
+	int num = 1;
+	for (int i =size/2; i >0; i/=2)
+	{
+		num *= 2;
+		cout << i << endl;
+		for (int j = 0; size / num + j * i <size&&j<size; j-=num)
+		{
+			cout << "-------" << endl;
+			for (int k = 0; k < size; k++)
+			{
+				cout << " ";
+				cout << v[k];
+				cout << " ";
+			}
+			cout << endl;
+			if (v[size/ num+j*i] <v[j])
+			{
+				int temp = v[size / num + j * i];
+				v[size / num + j * i] = v[j];
+				v[j] = temp;
+			}
+			for (int k = 0; k < size; k++)
+			{
+				cout << " ";
+				cout << v[k];
+				cout << " ";
+			}
+			cout << endl;
+			cout << "-------" << endl;
+		}
+
+		cout << "-------" << endl;
+	}
 	for (int k = 0; k < size; k++)
 	{
 		cout << " ";
 		cout << v[k];
 		cout << " ";
 	}
-	for (int i =1; i <size; i++)
-	{
-		cout << endl;
-		for (int j = i; j >0; j--)
-		{
-			if (v[j - 1] > v[j])
-			{
-				int temp = v[j - 1];
-				v[j - 1] = v[j];
-				v[j] = temp;
-			}
-		}
-		for (int k = 0; k < size; k++)
-		{
-			cout << " ";
-			cout << v[k];
-			cout << " ";
-		}
-	}
 }
-
 int main()
 {
-	StopWatch stop;
-	int list[7] = { 6,4,1,7,3,9,8 };
-	stop.setStartTime();
-		sort(list, 7);
-	stop.stop();
-	cout << stop.getElapsedTime();
+	int list[8] = { 8,1,4,2,7,6,3,5 };
+	sort(list, 8);
 	return 0;
 }
