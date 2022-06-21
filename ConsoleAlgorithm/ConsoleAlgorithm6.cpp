@@ -280,55 +280,233 @@
 //	cout << stop.getElapsedTime();
 //	return 0;
 //}
+//#include <iostream>
+//
+//using namespace std;
+//
+//void OldInsertionSort(int* v, int left, int right)
+//{
+//	int i, j, temp;
+//
+//	for (i = left+1; i <= right; i ++)
+//	{
+//		temp = v[i];
+//		for (j = i-1; j >= left && v[j] > temp; j --)
+//		{
+//			v[j+1] = v[j];
+//		}
+//		v[j+1] = temp;
+//	}
+//}
+//
+//void insertionSort(int* v, int left, int right, int gap)
+//{
+//	int i, j, temp;
+//
+//	for (i = left + gap; i <= right; i += gap)
+//	{
+//		temp = v[i];
+//		for (j = i - gap; j >= left && v[j] > temp; j -= gap)
+//		{
+//			v[j + gap] = v[j];
+//		}
+//		v[j + gap] = temp;
+//	}
+//}
+//
+//void shellSort(int* v, int size)
+//{
+//	int gap;
+//	for (gap = size / 2; gap > 0; gap /= 2)
+//	{
+//
+//		for (int i = 0; i < gap; i++)
+//		{
+//			insertionSort(v, i, size - 1, gap);
+//		}
+//		if ((gap % 2) == 0)
+//		{
+//			gap++;
+//		}
+//	}
+//}
+//
+//int main()
+//{
+//	int list[8] = { 8,1,4,2,7,6,3,5 };
+//
+//	OldInsertionSort(list,0, 7);
+//
+//
+//	shellSort(list,7);
+//	return 0;
+//}
 #include <iostream>
-
-using namespace std;
-
-void sort(int* v, int size)
+#include "StopWatch.h"
+void insertionSort(int v[], int left, int right, int gap)
 {
-	int num = 1;
-	for (int i =size/2; i >0; i/=2)
-	{
-		num *= 2;
-		cout << i << endl;
-		for (int j = 0; size / num + j * i <size&&j<size; j-=num)
-		{
-			cout << "-------" << endl;
-			for (int k = 0; k < size; k++)
-			{
-				cout << " ";
-				cout << v[k];
-				cout << " ";
-			}
-			cout << endl;
-			if (v[size/ num+j*i] <v[j])
-			{
-				int temp = v[size / num + j * i];
-				v[size / num + j * i] = v[j];
-				v[j] = temp;
-			}
-			for (int k = 0; k < size; k++)
-			{
-				cout << " ";
-				cout << v[k];
-				cout << " ";
-			}
-			cout << endl;
-			cout << "-------" << endl;
-		}
+	int i, j, temp;
 
-		cout << "-------" << endl;
-	}
-	for (int k = 0; k < size; k++)
+	for (i = left + gap; i <= right; i =i + gap)
 	{
-		cout << " ";
-		cout << v[k];
-		cout << " ";
+		temp = v[i];
+		for (j = i - gap; j >= left && v[j] > temp; j = j- gap)
+		{
+			v[j + gap] = v[j];
+		}
+		v[j + gap] = temp;
 	}
 }
+
+void shellSort(int v[], int size)
+{
+	int gap;
+	for (gap = size / 2; gap > 0; gap= gap / 2)
+	{
+		if ((gap % 2) == 0)
+		{
+			gap++;
+		}
+		for (int i = 0; i < gap; i++)
+		{
+			insertionSort(v, i, size - 1, gap);
+		}
+		
+	}
+}
+
+void quick(int a[],int left,int right)
+{
+	int pl = left;
+	int pr = right;
+	int x = a[(pl + pr) / 2];
+	do {
+		while (a[pl] < x) pl++;
+		while (a[pr] > x) pr--;
+		if (pl <= pr) {
+			int temp=a[pl];
+			a[pl] = a[pr];
+			a[pr] = temp;
+			pl++;
+			pr--;
+		}
+	} while (pl <= pr);
+	if (left < pr) quick(a,left,pr);
+	if (pl < right) quick(a, pl, right);
+}
+
+void QuickSort(int list[], int left,int right)
+{
+	if (left >= right)
+	{
+		return;
+	}
+	else
+	{
+		int pivotLeft = left+1;
+		int pivot = left;
+		int pivotRight = right;
+		int current = 1;
+		do
+		{
+			if (current)
+			{
+				if (list[pivot] >= list[pivotRight])
+				{
+					int temp = list[pivot];
+					list[pivot] = list[pivotRight];
+					list[pivotRight] = temp;
+					pivot = pivotRight;
+					current = 0;
+				}
+				--pivotRight;
+			}
+			else
+			{
+				if (list[pivot] <= list[pivotLeft])
+				{
+					int temp = list[pivot];
+					list[pivot] = list[pivotLeft];
+					list[pivotLeft] = temp;
+					pivot = pivotLeft;
+					current = 1;
+				}
+				++pivotLeft;
+			}
+		} while (pivotLeft <= pivotRight);
+		QuickSort(list, left, pivot - 1);
+		QuickSort(list, pivot + 1, right);
+	}
+	
+}
+
 int main()
 {
-	int list[8] = { 8,1,4,2,7,6,3,5 };
-	sort(list, 8);
+	StopWatch Watch;
+	int list1[10] = { 0, };
+	for (int i = 10; i > 0; i--)
+	{
+		list1[10 - i] = i;
+	}
+	QuickSort(list1, 0, 9);
+	for (int k = 0; k < 10; k++)
+	{
+		std::cout << " ";
+		std::cout << list1[k];
+		std::cout << " ";
+	}
+	std::cout << std::endl;
+	int list2[10] = { 0, };
+	for (int i = 10; i > 0; i--)
+	{
+		list2[10 - i] = i;
+	}
+	shellSort(list2,10);
+	for (int k = 0; k < 10; k++)
+	{
+		std::cout << " ";
+		std::cout << list2[k];
+		std::cout << " ";
+	}
+	std::cout << std::endl;
+	int listA[1000] = { 0, };
+	for (int i = 1000; i > 0; i--)
+	{
+		listA[1000 - i] = rand();
+	}
+	int listB[1000] = { 0, };
+	for (int i = 1000; i > 0; i--)
+	{
+		listB[1000 - i] = listA[1000 - i];
+	}
+	Watch.setStartTime();
+	for (int i = 1000; i > 0; i--)
+	{
+		QuickSort(listB, 0, 999);
+	}
+	Watch.stop();
+	std::cout <<"QuickSort" << Watch.getElapsedTime()<<std::endl;
+	for (int i = 1000; i > 0; i--)
+	{
+		listB[1000 - i] = listA[1000 - i];
+	}
+	Watch.setStartTime();
+	for (int i = 1000; i > 0; i--)
+	{
+		quick(listB,0, 999);
+	}
+	Watch.stop();
+	std::cout << "quick" << Watch.getElapsedTime() << std::endl;
+	for (int i = 1000; i > 0; i--)
+	{
+		listB[1000 - i] = listA[1000 - i];
+	}
+	Watch.setStartTime();
+	for (int i = 1000; i > 0; i--)
+	{
+		shellSort(listB, 1000);
+	}
+	Watch.stop();
+	std::cout <<"ShellSort" << Watch.getElapsedTime() << std::endl;
 	return 0;
 }
