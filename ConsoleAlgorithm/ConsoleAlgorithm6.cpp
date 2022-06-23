@@ -511,7 +511,63 @@
 //	return 0;
 //}
 #include <iostream>
+#include <vector>
+#include "StopWatch.h"
 using namespace std;
+
+void merge(int* array, int begin, int end)
+{
+    if (begin < end)
+    {
+        int left_pivot = (begin + end) / 2;
+        int right_pivot = left_pivot + 1;
+
+        //Divide
+        if (begin != left_pivot)
+        {
+            merge(array, begin, left_pivot);
+            merge(array, right_pivot, end);
+        }
+
+        //Conquer
+        std::vector<int> temp(end - begin + 1);
+        int first_division = begin;
+        int second_division = right_pivot;
+        int i = 0;
+
+        while (first_division <= left_pivot && second_division <= end)
+        {
+            if (array[first_division] <= array[second_division])
+            {
+                temp[i++] = array[first_division++];
+            }
+            else
+            {
+                temp[i++] = array[second_division++];
+            }
+        }
+
+        if (first_division > left_pivot)
+        {
+            while (second_division <= end)
+            {
+                temp[i++] = array[second_division++];
+            }
+        }
+        else
+        {
+            while (first_division <= left_pivot)
+            {
+                temp[i++] = array[first_division++];
+            }
+        }
+
+        for (i = begin; i <= end; ++i)
+        {
+            array[i] = temp[i - begin];
+        }
+    }
+}
 
 static int* buff;
 
@@ -549,19 +605,174 @@ int mergeSort(int a[], int n)
 int main()
 {
 	using namespace std;
-
-	int list1[10] = { 0, };
-	for (int i = 10; i > 0; i--)
-	{
-		list1[10 - i] = i;
-	}
-	mergeSort(list1, 10);
-	for (int k = 0; k < 10; k++)
-	{
-		std::cout << " ";
-		std::cout << list1[k];
-		std::cout << " ";
-	}
-	std::cout << std::endl;
+    StopWatch Watch;
+    int list[10] = { 0, };
+    for (int i = 10; i > 0; i--)
+    {
+        list[10 - i] = i;
+    }
+    mergeSort(list, 10);
+    for (int i = 0; i < 10; i++)
+    {
+        std::cout << list[i];
+    }
+    std::cout << std::endl;
+    for (int i = 10; i > 0; i--)
+    {
+        list[10 - i] = i;
+    }
+    merge(list, 0, 9);
+    for (int i = 0; i < 10; i++)
+    {
+        std::cout << list[i];
+    }
+    std::cout << std::endl;
+    int listA[10000] = { 0, };
+    for (int i = 10000; i > 0; i--)
+    {
+        listA[10000 - i] = rand();
+    }
+    int listB[10000] = { 0, };
+    Watch.setStartTime();
+    for (int i = 1000; i > 0; i--)
+    {
+        for (int i = 10000; i > 0; i--)
+        {
+            listB[10000 - i] = listA[10000 - i];
+        }
+        mergeSort(listB, 10000);
+    }
+    Watch.stop();
+    std::cout << "BookMergeSort" << Watch.getElapsedTime() << std::endl;
+    Watch.setStartTime();
+    for (int i = 1000; i > 0; i--)
+    {
+        for (int i = 10000; i > 0; i--)
+        {
+            listB[10000 - i] = listA[10000 - i];
+        }
+        merge(listB, 0, 9999);
+    }
+    Watch.stop();
+    std::cout << "mergeSort" << Watch.getElapsedTime() << std::endl;
 	return 0;
 }
+//#include <iostream>
+//#include "StopWatch.h"
+//
+//void swap(int &a, int &b)
+//{
+//	a ^= b;
+//	b ^= a;
+//	a ^= b;
+//}
+//
+//static void downheap(int a[], int left, int right)
+//{
+//	int temp = a[left];
+//	int child;
+//	int parent;
+//	for (parent = left; parent < (right + 1) / 2; parent = child)
+//	{
+//		int cl = parent * 2 + 1;
+//		int cr = cl + 1;
+//		child = (cr <= right && a[cr] > a[cl]) ? cr : cl;
+//		if (temp >= a[child])
+//			break;
+//		a[parent] = a[child];
+//	}
+//	a[parent] = temp;
+//}
+//
+//void heapsort(int a[], int n)
+//{
+//	int i;
+//	for (i = (n - 1) / 2; i >= 0; i--)
+//	{
+//		downheap(a, i, n - 1);
+//	}
+//	for (i = n - 1; i > 0; i--)
+//	{
+//		swap(a[0], a[i]);
+//		downheap(a,0, i - 1);
+//	}
+//}
+//
+//void heapify(int* array, int index, int size)
+//{
+//	for (int ch = (index << 1) | 1; ch < size; index = ch, ch = ch << 1 | 1)
+//	{
+//		if (ch + 1 < size && array[ch + 1] > array[ch]) ++ch;
+//		if (array[ch] <= array[index]) return;
+//		swap(array[ch], array[index]);
+//	}
+//}
+//
+//void heap(int* array, int begin, int end)
+//{
+//	int* base = array + begin;
+//	int size = end - begin + 1;
+//	for (int i = size / 2 - 1; i >= 0; i--)
+//		heapify(base, i, size);
+//
+//	while (--size >= 1)
+//	{
+//		swap(base[0], base[size]);
+//		heapify(base, 0, size);
+//	}
+//}
+//
+//int main()
+//{
+//	StopWatch Watch;
+//	int list[10] = { 0, };
+//	for (int i = 10; i > 0; i--)
+//	{
+//		list[10 - i] = i;
+//	}
+//	heapsort(list, 10);
+//	for (int i = 0; i < 10; i++)
+//	{
+//		std::cout<<list[i];
+//	}
+//	std::cout << std::endl;
+//	for (int i = 10; i > 0; i--)
+//	{
+//		list[10 - i] = i;
+//	}
+//	heap(list,0, 9);
+//	for (int i = 0; i < 10; i++)
+//	{
+//		std::cout << list[i];
+//	}
+//	std::cout << std::endl;
+//	int listA[10000] = { 0, };
+//	for (int i = 10000; i > 0; i--)
+//	{
+//		listA[10000 - i] = rand();
+//	}
+//	int listB[10000] = { 0, };
+//	Watch.setStartTime();
+//	for (int i = 1000; i > 0; i--)
+//	{
+//		for (int i = 10000; i > 0; i--)
+//		{
+//			listB[10000 - i] = listA[10000 - i];
+//		}
+//		heapsort(listB, 10000);
+//	}
+//	Watch.stop();
+//	std::cout << "BookHeapSort" << Watch.getElapsedTime() << std::endl;
+//	Watch.setStartTime();
+//	for (int i = 1000; i > 0; i--)
+//	{
+//		for (int i = 10000; i > 0; i--)
+//		{
+//			listB[10000 - i] = listA[10000 - i];
+//		}
+//		heap(listB, 0,9999);
+//	}
+//	Watch.stop();
+//	std::cout << "HeapSort" << Watch.getElapsedTime() << std::endl;
+//	return 0;
+//}
