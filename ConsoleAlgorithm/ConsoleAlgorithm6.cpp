@@ -510,153 +510,153 @@
 //	std::cout <<"ShellSort" << Watch.getElapsedTime() << std::endl;
 //	return 0;
 //}
-#include <iostream>
-#include <vector>
-#include "StopWatch.h"
-using namespace std;
-
-void merge(int* array, int begin, int end)
-{
-    if (begin < end)
-    {
-        int left_pivot = (begin + end) / 2;
-        int right_pivot = left_pivot + 1;
-
-        //Divide
-        if (begin != left_pivot)
-        {
-            merge(array, begin, left_pivot);
-            merge(array, right_pivot, end);
-        }
-
-        //Conquer
-        std::vector<int> temp(end - begin + 1);
-        int first_division = begin;
-        int second_division = right_pivot;
-        int i = 0;
-
-        while (first_division <= left_pivot && second_division <= end)
-        {
-            if (array[first_division] <= array[second_division])
-            {
-                temp[i++] = array[first_division++];
-            }
-            else
-            {
-                temp[i++] = array[second_division++];
-            }
-        }
-
-        if (first_division > left_pivot)
-        {
-            while (second_division <= end)
-            {
-                temp[i++] = array[second_division++];
-            }
-        }
-        else
-        {
-            while (first_division <= left_pivot)
-            {
-                temp[i++] = array[first_division++];
-            }
-        }
-
-        for (i = begin; i <= end; ++i)
-        {
-            array[i] = temp[i - begin];
-        }
-    }
-}
-
-static int* buff;
-
-void _mergeSort(int a[], int left,int right)
-{
-	if (left < right)
-	{
-		int center = (left + right) / 2;
-		int p = 0;
-		int i;
-		int j=0;
-		int k = left;
-		_mergeSort(a, left, center);
-		_mergeSort(a, center + 1, right);
-		for (i = left; i <= center; i++)
-			buff[p++] = a[i];
-		while (i <= right && j < p)
-			a[k++] = (buff[j] <= a[i]) ? buff[j++] : a[i++];
-		while (j < p)
-			a[k++] = buff[j++];
-	}
-}
-
-int mergeSort(int a[], int n)
-{
-	if((buff = new int[n]) == NULL)
-	{
-		return -1;
-	}
-	_mergeSort(a, 0, n - 1);
-	delete[](buff);
-	return 0;
-}
-
-int main()
-{
-	using namespace std;
-    StopWatch Watch;
-    int list[10] = { 0, };
-    for (int i = 10; i > 0; i--)
-    {
-        list[10 - i] = i;
-    }
-    mergeSort(list, 10);
-    for (int i = 0; i < 10; i++)
-    {
-        std::cout << list[i];
-    }
-    std::cout << std::endl;
-    for (int i = 10; i > 0; i--)
-    {
-        list[10 - i] = i;
-    }
-    merge(list, 0, 9);
-    for (int i = 0; i < 10; i++)
-    {
-        std::cout << list[i];
-    }
-    std::cout << std::endl;
-    int listA[10000] = { 0, };
-    for (int i = 10000; i > 0; i--)
-    {
-        listA[10000 - i] = rand();
-    }
-    int listB[10000] = { 0, };
-    Watch.setStartTime();
-    for (int i = 1000; i > 0; i--)
-    {
-        for (int i = 10000; i > 0; i--)
-        {
-            listB[10000 - i] = listA[10000 - i];
-        }
-        mergeSort(listB, 10000);
-    }
-    Watch.stop();
-    std::cout << "BookMergeSort" << Watch.getElapsedTime() << std::endl;
-    Watch.setStartTime();
-    for (int i = 1000; i > 0; i--)
-    {
-        for (int i = 10000; i > 0; i--)
-        {
-            listB[10000 - i] = listA[10000 - i];
-        }
-        merge(listB, 0, 9999);
-    }
-    Watch.stop();
-    std::cout << "mergeSort" << Watch.getElapsedTime() << std::endl;
-	return 0;
-}
+//#include <iostream>
+//#include <vector>
+//#include "StopWatch.h"
+//using namespace std;
+//
+//void merge(int* array, int begin, int end)
+//{
+//    if (begin < end)
+//    {
+//        int left_pivot = (begin + end) / 2;
+//        int right_pivot = left_pivot + 1;
+//
+//        //Divide
+//        if (begin != left_pivot)
+//        {
+//            merge(array, begin, left_pivot);
+//            merge(array, right_pivot, end);
+//        }
+//
+//        //Conquer
+//        std::vector<int> temp(end - begin + 1);
+//        int first_division = begin;
+//        int second_division = right_pivot;
+//        int i = 0;
+//
+//        while (first_division <= left_pivot && second_division <= end)
+//        {
+//            if (array[first_division] <= array[second_division])
+//            {
+//                temp[i++] = array[first_division++];
+//            }
+//            else
+//            {
+//                temp[i++] = array[second_division++];
+//            }
+//        }
+//
+//        if (first_division > left_pivot)
+//        {
+//            while (second_division <= end)
+//            {
+//                temp[i++] = array[second_division++];
+//            }
+//        }
+//        else
+//        {
+//            while (first_division <= left_pivot)
+//            {
+//                temp[i++] = array[first_division++];
+//            }
+//        }
+//
+//        for (i = begin; i <= end; ++i)
+//        {
+//            array[i] = temp[i - begin];
+//        }
+//    }
+//}
+//
+//static int* buff;
+//
+//void _mergeSort(int a[], int left,int right)
+//{
+//	if (left < right)
+//	{
+//		int center = (left + right) / 2;
+//		int p = 0;
+//		int i;
+//		int j=0;
+//		int k = left;
+//		_mergeSort(a, left, center);
+//		_mergeSort(a, center + 1, right);
+//		for (i = left; i <= center; i++)
+//			buff[p++] = a[i];
+//		while (i <= right && j < p)
+//			a[k++] = (buff[j] <= a[i]) ? buff[j++] : a[i++];
+//		while (j < p)
+//			a[k++] = buff[j++];
+//	}
+//}
+//
+//int mergeSort(int a[], int n)
+//{
+//	if((buff = new int[n]) == NULL)
+//	{
+//		return -1;
+//	}
+//	_mergeSort(a, 0, n - 1);
+//	delete[](buff);
+//	return 0;
+//}
+//
+//int main()
+//{
+//	using namespace std;
+//    StopWatch Watch;
+//    int list[10] = { 0, };
+//    for (int i = 10; i > 0; i--)
+//    {
+//        list[10 - i] = i;
+//    }
+//    mergeSort(list, 10);
+//    for (int i = 0; i < 10; i++)
+//    {
+//        std::cout << list[i];
+//    }
+//    std::cout << std::endl;
+//    for (int i = 10; i > 0; i--)
+//    {
+//        list[10 - i] = i;
+//    }
+//    merge(list, 0, 9);
+//    for (int i = 0; i < 10; i++)
+//    {
+//        std::cout << list[i];
+//    }
+//    std::cout << std::endl;
+//    int listA[10000] = { 0, };
+//    for (int i = 10000; i > 0; i--)
+//    {
+//        listA[10000 - i] = rand();
+//    }
+//    int listB[10000] = { 0, };
+//    Watch.setStartTime();
+//    for (int i = 1000; i > 0; i--)
+//    {
+//        for (int i = 10000; i > 0; i--)
+//        {
+//            listB[10000 - i] = listA[10000 - i];
+//        }
+//        mergeSort(listB, 10000);
+//    }
+//    Watch.stop();
+//    std::cout << "BookMergeSort" << Watch.getElapsedTime() << std::endl;
+//    Watch.setStartTime();
+//    for (int i = 1000; i > 0; i--)
+//    {
+//        for (int i = 10000; i > 0; i--)
+//        {
+//            listB[10000 - i] = listA[10000 - i];
+//        }
+//        merge(listB, 0, 9999);
+//    }
+//    Watch.stop();
+//    std::cout << "mergeSort" << Watch.getElapsedTime() << std::endl;
+//	return 0;
+//}
 //#include <iostream>
 //#include "StopWatch.h"
 //
@@ -776,3 +776,58 @@ int main()
 //	std::cout << "HeapSort" << Watch.getElapsedTime() << std::endl;
 //	return 0;
 //}
+#include <iostream>
+
+int MaxValue(int arr[],int size)
+{
+	int maxIndex=0;
+	for (int i = 1; i < size; i++)
+	{
+		if (arr[maxIndex] < arr[i])
+		{
+			maxIndex = i;
+		}
+	}
+	return maxIndex;
+}
+
+void FrequencySort(int arr[],int size)
+{
+	int maxValue = MaxValue(arr, size);
+	maxValue =arr[maxValue]+1;
+	int* fList = new int[maxValue] {0,};
+	for (int i = 0; i < size; i++)
+	{
+		fList[arr[i]]++;
+	}
+	for (int i = 1; i < maxValue; i++)
+	{
+		fList[i]+= fList[i-1];
+	}
+	int* b = new int[size] {0, };
+	for (int i = size - 1; i >= 0; i--)
+	{
+		b[--fList[arr[i]]] = arr[i];
+	}
+	for (int i = 0; i < size; i++)
+	{
+		arr[i] = b[i];
+	}
+	delete[] fList;
+	delete[] b;
+}
+
+int main()
+{
+	int list[10] = { 0, };
+	for (int i = 10; i > 0; i--)
+	{
+		list[10 - i] = i;
+	}
+	FrequencySort(list,10);
+	for (int i = 0; i < 10; i++)
+	{
+		std::cout << list[i];
+	}
+	return 0;
+}
