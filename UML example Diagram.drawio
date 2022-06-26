@@ -1,1 +1,48 @@
-<mxfile host="app.diagrams.net" modified="2022-06-26T13:24:01.323Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36" version="20.0.3" etag="r4kDsyl4rW0dbApqSBiM" type="github"><diagram id="MVxN-RxCAj31oxEd8tyH">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2022-06-26T15:31:46.327Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36" etag="9LBwcKHkU615BenbPj4n" version="20.0.3" type="github">
+  <diagram id="MVxN-RxCAj31oxEd8tyH" name="Page-1">
+    <mxGraphModel dx="494" dy="546" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="QerbIKZHL-n6ob7uPcmJ-1" value="People" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="120" y="110" width="182" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="QerbIKZHL-n6ob7uPcmJ-2" value="+phone_number:string&#xa;# age:int&#xa;-social_Security_Number:string&#xa;&lt;&lt;etc&gt;&gt;~sex_type:ENUM" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="QerbIKZHL-n6ob7uPcmJ-1">
+          <mxGeometry y="26" width="182" height="69" as="geometry" />
+        </mxCell>
+        <mxCell id="QerbIKZHL-n6ob7uPcmJ-3" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="QerbIKZHL-n6ob7uPcmJ-1">
+          <mxGeometry y="95" width="182" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="QerbIKZHL-n6ob7uPcmJ-4" value="+setPhone(phone:string)&#xa;#setAge(age:int)&#xa;-getBlood()&#xa;&lt;&lt;etc&gt;&gt;~setSex(sex:ENUM=0)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="QerbIKZHL-n6ob7uPcmJ-1">
+          <mxGeometry y="103" width="182" height="67" as="geometry" />
+        </mxCell>
+        <mxCell id="QerbIKZHL-n6ob7uPcmJ-5" value="ETC::People" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="123" y="331" width="160" height="86" as="geometry" />
+        </mxCell>
+        <mxCell id="QerbIKZHL-n6ob7uPcmJ-6" value="+ 속성" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="QerbIKZHL-n6ob7uPcmJ-5">
+          <mxGeometry y="26" width="160" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="QerbIKZHL-n6ob7uPcmJ-7" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="QerbIKZHL-n6ob7uPcmJ-5">
+          <mxGeometry y="52" width="160" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="QerbIKZHL-n6ob7uPcmJ-8" value="+ 메소드" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="QerbIKZHL-n6ob7uPcmJ-5">
+          <mxGeometry y="60" width="160" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="QerbIKZHL-n6ob7uPcmJ-9" value="&lt;&lt;interface&gt;&gt;&#xa;InterfaceName" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=42;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="328" y="361" width="213" height="99" as="geometry">
+            <mxRectangle x="329" y="323" width="118" height="41" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QerbIKZHL-n6ob7uPcmJ-10" value="+Test:string =&quot;TEST&quot;{readOnly}" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="QerbIKZHL-n6ob7uPcmJ-9">
+          <mxGeometry y="42" width="213" height="23" as="geometry" />
+        </mxCell>
+        <mxCell id="QerbIKZHL-n6ob7uPcmJ-11" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="QerbIKZHL-n6ob7uPcmJ-9">
+          <mxGeometry y="65" width="213" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="QerbIKZHL-n6ob7uPcmJ-12" value="+getTest():string throw Exception" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="QerbIKZHL-n6ob7uPcmJ-9">
+          <mxGeometry y="73" width="213" height="26" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
