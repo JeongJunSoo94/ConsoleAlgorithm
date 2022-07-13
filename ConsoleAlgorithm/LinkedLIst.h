@@ -8,6 +8,7 @@ typedef struct node
 {
 	Member data;
 	struct node* next;
+
 }Node;
 
 class LinkedLIst
