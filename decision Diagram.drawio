@@ -1,1 +1,181 @@
-<mxfile host="app.diagrams.net" modified="2022-07-15T12:07:08.508Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36" version="20.1.1" etag="p_mxnFLcUmXENmlYXxpE" type="github"><diagram id="7jwGA5AetdTJTi2fJg-C">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2022-07-15T12:58:59.258Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36" etag="3poBaRv6GJDMGEnFtPHP" version="20.1.1" type="github" pages="2">
+  <diagram id="7jwGA5AetdTJTi2fJg-C" name="Page-1">
+    <mxGraphModel dx="1955" dy="1078" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Zcezu1F2G5sxlNZDZEah-1" value="Selector" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="10" y="460" width="430" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="Zcezu1F2G5sxlNZDZEah-2" value=" private List&lt;TreeNode&gt; childNodes;&#xa; public bool nodeState { get; private set; } = false;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="Zcezu1F2G5sxlNZDZEah-1">
+          <mxGeometry y="26" width="430" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="Zcezu1F2G5sxlNZDZEah-3" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="Zcezu1F2G5sxlNZDZEah-1">
+          <mxGeometry y="70" width="430" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="Zcezu1F2G5sxlNZDZEah-4" value="public Selector(List&lt;TreeNode&gt; childNodes) { this.childNodes = childNodes; }&#xa;public bool Evaluate()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="Zcezu1F2G5sxlNZDZEah-1">
+          <mxGeometry y="78" width="430" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="Zcezu1F2G5sxlNZDZEah-5" value="«TreeNode»&lt;br&gt;&lt;b&gt;Name&lt;/b&gt;" style="html=1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="40" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="Zcezu1F2G5sxlNZDZEah-6" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;Interface&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;&lt;b&gt;TreeNode&lt;/b&gt;&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&amp;nbsp;+bool nodeState { get; }&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&amp;nbsp;+bool Evaluate();&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;" vertex="1" parent="1">
+          <mxGeometry x="730" y="50" width="190" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="Zcezu1F2G5sxlNZDZEah-8" value="Sequence" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="510" y="460" width="430" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="Zcezu1F2G5sxlNZDZEah-9" value=" private List&lt;TreeNode&gt; childNodes;&#xa;    public bool nodeState { get; private set; } = false;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="Zcezu1F2G5sxlNZDZEah-8">
+          <mxGeometry y="26" width="430" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="Zcezu1F2G5sxlNZDZEah-10" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="Zcezu1F2G5sxlNZDZEah-8">
+          <mxGeometry y="70" width="430" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="Zcezu1F2G5sxlNZDZEah-11" value="public Sequence(List&lt;TreeNode&gt; childNodes) { this.childNodes = childNodes; }&#xa;public bool Evaluate()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="Zcezu1F2G5sxlNZDZEah-8">
+          <mxGeometry y="78" width="430" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="Zcezu1F2G5sxlNZDZEah-12" value="" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="Zcezu1F2G5sxlNZDZEah-8">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="265" y="380" as="sourcePoint" />
+            <mxPoint x="830" y="190" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="725" y="360" />
+              <mxPoint x="830" y="360" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Zcezu1F2G5sxlNZDZEah-13" value="Inverter" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="960" y="460" width="430" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="Zcezu1F2G5sxlNZDZEah-14" value="    private TreeNode nodeToInvert;&#xa;    public bool nodeState { get; private set; } = false;&#xa;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="Zcezu1F2G5sxlNZDZEah-13">
+          <mxGeometry y="26" width="430" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="Zcezu1F2G5sxlNZDZEah-15" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="Zcezu1F2G5sxlNZDZEah-13">
+          <mxGeometry y="70" width="430" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="Zcezu1F2G5sxlNZDZEah-16" value="    public Inverter(TreeNode nodeToInvert) { this.nodeToInvert = nodeToInvert; }&#xa;    public bool Evaluate()&#xa;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="Zcezu1F2G5sxlNZDZEah-13">
+          <mxGeometry y="78" width="430" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="Zcezu1F2G5sxlNZDZEah-18" value="ActionNode" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="1410" y="460" width="430" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="Zcezu1F2G5sxlNZDZEah-19" value="  private ActionNodeDelegate action;&#xa;    public bool nodeState { get; private set; } = false;&#xa;    public delegate bool ActionNodeDelegate();&#xa;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="Zcezu1F2G5sxlNZDZEah-18">
+          <mxGeometry y="26" width="430" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="Zcezu1F2G5sxlNZDZEah-20" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="Zcezu1F2G5sxlNZDZEah-18">
+          <mxGeometry y="80" width="430" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="Zcezu1F2G5sxlNZDZEah-21" value="    public Inverter(TreeNode nodeToInvert) { this.nodeToInvert = nodeToInvert; }&#xa;    public bool Evaluate()&#xa;    public ActionNode(ActionNodeDelegate action)&#xa;    public bool Evaluate()&#xa;&#xa;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="Zcezu1F2G5sxlNZDZEah-18">
+          <mxGeometry y="88" width="430" height="72" as="geometry" />
+        </mxCell>
+        <mxCell id="Zcezu1F2G5sxlNZDZEah-23" value="" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="Zcezu1F2G5sxlNZDZEah-18">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="1270" y="340" as="sourcePoint" />
+            <mxPoint x="830" y="190" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1625" y="360" />
+              <mxPoint x="830" y="360" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Zcezu1F2G5sxlNZDZEah-25" value="DecisionTree" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="130" y="740" width="430" height="86" as="geometry" />
+        </mxCell>
+        <mxCell id="Zcezu1F2G5sxlNZDZEah-27" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="Zcezu1F2G5sxlNZDZEah-25">
+          <mxGeometry y="26" width="430" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="Zcezu1F2G5sxlNZDZEah-28" value=" public static void Test()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="Zcezu1F2G5sxlNZDZEah-25">
+          <mxGeometry y="34" width="430" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="Zcezu1F2G5sxlNZDZEah-32" value="AITree" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="680" y="630" width="430" height="330" as="geometry" />
+        </mxCell>
+        <mxCell id="Zcezu1F2G5sxlNZDZEah-33" value="private float playerDistanceFromEnemy;&#xa;    private int playerPower;&#xa;&#xa;    private ActionNode IsInAttackRange;&#xa;    private ActionNode IsVisible;&#xa;    private ActionNode EstimatePlayerPower;&#xa;    private Sequence Attack;&#xa;    private Inverter Patrol;&#xa;    private Sequence Escape;&#xa;    private Selector Root;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="Zcezu1F2G5sxlNZDZEah-32">
+          <mxGeometry y="26" width="430" height="154" as="geometry" />
+        </mxCell>
+        <mxCell id="Zcezu1F2G5sxlNZDZEah-34" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="Zcezu1F2G5sxlNZDZEah-32">
+          <mxGeometry y="180" width="430" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="Zcezu1F2G5sxlNZDZEah-35" value=" bool PlayerIsInAttackRange() =&gt; playerDistanceFromEnemy &lt; 5;&#xa;    bool PlayerIsVisible() =&gt; playerDistanceFromEnemy &lt; 8;&#xa;    bool PlayerIsTooPowerful() =&gt; playerPower &gt; 3;&#xa;    public AITree()&#xa;    private void ShowCommunicats()&#xa;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="Zcezu1F2G5sxlNZDZEah-32">
+          <mxGeometry y="188" width="430" height="142" as="geometry" />
+        </mxCell>
+        <mxCell id="Zcezu1F2G5sxlNZDZEah-37" value="" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="220" y="460" as="sourcePoint" />
+            <mxPoint x="830" y="190" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="220" y="360" />
+              <mxPoint x="830" y="360" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Zcezu1F2G5sxlNZDZEah-38" value="" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="1170" y="460" as="sourcePoint" />
+            <mxPoint x="830" y="190" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1170" y="360" />
+              <mxPoint x="830" y="360" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="n3iN-cZWPtGxOyVxABTB" name="Page-2">
+    <mxGraphModel dx="2216" dy="1221" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="NtKf7ypAuuU4aXu_AjJP-6" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://i.stack.imgur.com/JJdlU.png;" vertex="1" parent="1">
+          <mxGeometry x="20" y="190" width="767.21" height="360" as="geometry" />
+        </mxCell>
+        <mxCell id="NtKf7ypAuuU4aXu_AjJP-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="NtKf7ypAuuU4aXu_AjJP-9" target="NtKf7ypAuuU4aXu_AjJP-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NtKf7ypAuuU4aXu_AjJP-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="NtKf7ypAuuU4aXu_AjJP-9">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="370" y="880" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NtKf7ypAuuU4aXu_AjJP-9" value="" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="290" y="720" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="NtKf7ypAuuU4aXu_AjJP-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="NtKf7ypAuuU4aXu_AjJP-10" target="NtKf7ypAuuU4aXu_AjJP-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NtKf7ypAuuU4aXu_AjJP-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="NtKf7ypAuuU4aXu_AjJP-10" target="NtKf7ypAuuU4aXu_AjJP-17">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="470" y="840" />
+              <mxPoint x="374" y="840" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NtKf7ypAuuU4aXu_AjJP-10" value="" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="430" y="720" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="NtKf7ypAuuU4aXu_AjJP-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="NtKf7ypAuuU4aXu_AjJP-11">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="740" y="760" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NtKf7ypAuuU4aXu_AjJP-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="NtKf7ypAuuU4aXu_AjJP-11" target="NtKf7ypAuuU4aXu_AjJP-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NtKf7ypAuuU4aXu_AjJP-11" value="&lt;span style=&quot;color: rgba(0, 0, 0, 0); font-family: monospace; font-size: 0px; text-align: start;&quot;&gt;%3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20value%3D%22%22%20style%3D%22rhombus%3BwhiteSpace%3Dwrap%3Bhtml%3D1%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%22580%22%20y%3D%22720%22%20width%3D%2280%22%20height%3D%2280%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%3E&lt;/span&gt;" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="580" y="720" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="NtKf7ypAuuU4aXu_AjJP-17" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="414" y="880" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="NtKf7ypAuuU4aXu_AjJP-18" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="580" y="830" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="NtKf7ypAuuU4aXu_AjJP-21" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="740" y="720" width="80" height="80" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
